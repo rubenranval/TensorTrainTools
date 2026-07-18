@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     18221,        506]
-NotebookOptionsPosition[     12398,        380]
-NotebookOutlinePosition[     13187,        406]
-CellTagsIndexPosition[     13108,        401]
+NotebookDataLength[     52255,       1223]
+NotebookOptionsPosition[     45642,       1081]
+NotebookOutlinePosition[     46433,       1107]
+CellTagsIndexPosition[     46353,       1102]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -38,21 +38,76 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox["c", "TI"]], "InlineFormula",ExpressionUUID->
   "1144f5a7-7a2c-0041-b818-c99246fff29f"],
- " times the tensor ",
+ " times the tensor train ",
  Cell[BoxData[
   StyleBox["tt", "TI"]], "InlineFormula",ExpressionUUID->
   "6c8be673-5204-2442-8d11-14627c7a89ac"],
  ", for a scalar ",
  Cell[BoxData[
   StyleBox["c", "TI"]], "InlineFormula",ExpressionUUID->
-  "36e93b01-d15a-bc41-814d-7bf01420fcd1"],
- ", by scaling a single core. The bond dimensions are unchanged."
+  "36e93b01-d15a-bc41-814d-7bf01420fcd1"]
 }], "Usage",
- CellChangeTimes->{{3.9924162082325306`*^9, 3.9924162084717255`*^9}},
+ CellChangeTimes->{{3.9924162082325306`*^9, 3.9924162084717255`*^9}, {
+  3.9933695845860596`*^9, 3.9933695893133354`*^9}},
  CellID->25313002,ExpressionUUID->"2270b60f-ca3b-0c4c-9641-cca9fe33fff4"],
 
-Cell["XXXX", "Notes",
- CellID->51217028,ExpressionUUID->"f2c8c5df-082f-714e-982c-62985ce2b62a"]
+Cell["\<\
+The scalar is absorbed into the first core, all other cores and all bond \
+dimensions are unchanged.\
+\>", "Notes",
+ CellChangeTimes->{
+  3.9933696138455944`*^9, {3.9933701749018993`*^9, 3.9933701758439255`*^9}},
+ CellID->51217028,ExpressionUUID->"f2c8c5df-082f-714e-982c-62985ce2b62a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  StyleBox["c", "TI"]], "InlineFormula",ExpressionUUID->
+  "53493e3d-4114-a24c-8777-9d4bf0cca8c3"],
+ " can be numeric or symbolic. The second argument can be a tensor train or a \
+raw core list."
+}], "Notes",
+ CellChangeTimes->{{3.993369624132288*^9, 3.99336962476186*^9}, 
+   3.9933701307002773`*^9},
+ CellID->176839653,ExpressionUUID->"6666bef3-cb86-8e4a-b975-b403046f3d09"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  StyleBox["ct", "TI"]], "InlineFormula",ExpressionUUID->
+  "6602d51b-6586-f84d-a851-135108cd1a88"],
+ " and ",
+ Cell[BoxData[
+  RowBox[{"-", 
+   StyleBox["t", "TI"]}]], "InlineFormula",ExpressionUUID->
+  "fc4eed8e-dd54-bf49-8c85-dd313b0417ca"],
+ " are equivalent to ",
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["TensorTrainScale",
+    BaseStyle->"Link",
+    ButtonData->"paclet:RubenRanval/TensorTrainTools/ref/TensorTrainScale"], "[", 
+   RowBox[{
+    StyleBox["c", "TI"], ",", " ", 
+    StyleBox["t", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "6fb79366-2230-a94b-8cc9-c19e093d35f7"],
+ " and ",
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["TensorTrainScale",
+    BaseStyle->"Link",
+    ButtonData->"paclet:RubenRanval/TensorTrainTools/ref/TensorTrainScale"], "[", 
+   RowBox[{
+    RowBox[{"-", "1"}], ",", " ", 
+    StyleBox["t", "TI"]}], "]"}]], "InlineFormula",ExpressionUUID->
+  "e1a3c207-4f98-f849-a9b0-06cca9ae0002"],
+ " for numeric ",
+ Cell[BoxData[
+  StyleBox["c", "TI"]], "InlineFormula",ExpressionUUID->
+  "77bb0419-4d76-b946-91fa-997c420ae690"],
+ "."
+}], "Notes",
+ CellChangeTimes->{
+  3.9933696482998905`*^9, {3.993370134711708*^9, 3.993370171757366*^9}},
+ CellID->304569622,ExpressionUUID->"8948caf2-1a78-554d-a763-79c9ad3b9eac"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -85,9 +140,11 @@ Cell[TextData[{
    " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
     "d82dfbc8-ca04-a94d-98b0-08a4ea616c8d"], 
    DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
-     FrontEndObject[
-      LinkObject["i7bzb_shm", 209, 9]], 22], $CellContext`cellobj$$ = 
-    CellObject[6753]}, 
+    "101032c1-5dd9-0d46-9bb9-4ebeeb8c0688", 
+     "54a52da2-4c3a-054e-85cc-6b14cb177025"], $CellContext`cellobj$$ = 
+    CellObject[
+    "9d1b66bb-b18d-0e4a-b411-c49dec5a50f1", 
+     "50ae6f05-8e7a-ea4a-8c60-039f528975df"]}, 
     TemplateBox[{
       GraphicsBox[{{
          Thickness[0.06], 
@@ -186,8 +243,11 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<RubenRanval`TensorTrainTools`\>\"", 
   "]"}]], "ExampleInitialization",
+ CellChangeTimes->{{3.9933701882828007`*^9, 3.9933701889013233`*^9}},
  CellID->350672294,ExpressionUUID->"a9e20a64-b66c-4648-a19a-6b33cb400dfb"]
 }, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  InterpretationBox[GridBox[{
@@ -202,6 +262,647 @@ Cell[BoxData[
    }],
   $Line = 0; Null]], "PrimaryExamplesSection",
  CellID->337466633,ExpressionUUID->"e4de4d88-2c83-174a-b988-889be9919d84"],
+
+Cell["\<\
+Scaling a tensor train doesn't affect the maximum bond dimension:\
+\>", "ExampleText",
+ CellChangeTimes->{{3.9933847534661026`*^9, 3.9933847686630535`*^9}},
+ CellID->139595402,ExpressionUUID->"8ceca0a6-ec9f-744f-b247-b1ee1a31203c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"t", "=", 
+  RowBox[{"TensorTrainDecomposition", "[", 
+   RowBox[{"RandomReal", "[", 
+    RowBox[{"1", ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "3", ",", "4"}], "}"}]}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"TensorTrainScale", "[", 
+  RowBox[{"3", ",", "t"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9933696963100433`*^9, 3.993369722968046*^9}, {
+  3.9933847283884068`*^9, 3.993384738798004*^9}, {3.9933847724711075`*^9, 
+  3.9933847811640015`*^9}},
+ CellLabel->"In[24]:=",
+ CellID->127358575,ExpressionUUID->"de8fa631-8f92-034c-a1b3-b265b6479f05"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["TensorTrain",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            TagBox[
+             GraphicsBox[
+              NamespaceBox["NetworkGraphics", 
+               DynamicModuleBox[{Typeset`graph = HoldComplete[
+                   
+                   Graph[{"c1", "c2", "c3", "p1", "p2", "p3"}, {
+                    Null, {{1, 2}, {2, 3}, {1, 4}, {2, 5}, {3, 6}}}, {
+                    EdgeLabels -> {None}, EdgeStyle -> {
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]]}, ImageSize -> {Automatic, 40}, 
+                    PlotRangePadding -> 0.3, 
+                    VertexCoordinates -> {{1, 0}, {2, 0}, {3, 0}, {1, -0.8}, {
+                    2, -0.8}, {3, -0.8}}, VertexLabels -> {None}, 
+                    VertexSize -> {
+                    "p2" -> 0.01, "p1" -> 0.01, "c1" -> 0.5, "p3" -> 0.01, 
+                    "c2" -> 0.5, "c3" -> 0.5}, 
+                    VertexStyle -> {
+                    "p1" -> GrayLevel[0.5], "p2" -> GrayLevel[0.5], "c1" -> 
+                    RGBColor[0.35, 0.55, 0.85], "c2" -> 
+                    RGBColor[0.35, 0.55, 0.85], "p3" -> GrayLevel[0.5], "c3" -> 
+                    RGBColor[0.35, 0.55, 0.85]}}]]}, 
+                TagBox[
+                 GraphicsGroupBox[{{
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]], 
+                    LineBox[{{
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$2", Automatic, Center]}, {
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$4", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$3", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$5", Automatic, Center]}, {
+                    DynamicLocation["VertexID$3", Automatic, Center], 
+                    DynamicLocation["VertexID$6", Automatic, Center]}}]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$1"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$2"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$3"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$4"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$5"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$6"]}}], 
+                 MouseAppearanceTag["NetworkGraphics"]], 
+                AllowKernelInitialization -> False]], {
+              FormatType -> TraditionalForm, FrameTicks -> None, 
+               ImageSize -> {Automatic, 40}, PlotRangePadding -> 0.3, 
+               DefaultBaseStyle -> "NetworkGraphics"}], Deploy, 
+             DefaultBaseStyle -> "Deploy"], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Cores: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Max \[Chi]: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["4", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Tensor dims: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"2", ",", "3", ",", "4"}], "}"}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            TagBox[
+             GraphicsBox[
+              NamespaceBox["NetworkGraphics", 
+               DynamicModuleBox[{Typeset`graph = HoldComplete[
+                   
+                   Graph[{"c1", "c2", "c3", "p1", "p2", "p3"}, {
+                    Null, {{1, 2}, {2, 3}, {1, 4}, {2, 5}, {3, 6}}}, {
+                    EdgeLabels -> {None}, EdgeStyle -> {
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]]}, ImageSize -> {Automatic, 40}, 
+                    PlotRangePadding -> 0.3, 
+                    VertexCoordinates -> {{1, 0}, {2, 0}, {3, 0}, {1, -0.8}, {
+                    2, -0.8}, {3, -0.8}}, VertexLabels -> {None}, 
+                    VertexSize -> {
+                    "p2" -> 0.01, "p1" -> 0.01, "c1" -> 0.5, "p3" -> 0.01, 
+                    "c2" -> 0.5, "c3" -> 0.5}, 
+                    VertexStyle -> {
+                    "p1" -> GrayLevel[0.5], "p2" -> GrayLevel[0.5], "c1" -> 
+                    RGBColor[0.35, 0.55, 0.85], "c2" -> 
+                    RGBColor[0.35, 0.55, 0.85], "p3" -> GrayLevel[0.5], "c3" -> 
+                    RGBColor[0.35, 0.55, 0.85]}}]]}, 
+                TagBox[
+                 GraphicsGroupBox[{{
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]], 
+                    LineBox[{{
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$2", Automatic, Center]}, {
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$4", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$3", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$5", Automatic, Center]}, {
+                    DynamicLocation["VertexID$3", Automatic, Center], 
+                    DynamicLocation["VertexID$6", Automatic, Center]}}]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$1"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$2"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$3"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$4"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$5"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$6"]}}], 
+                 MouseAppearanceTag["NetworkGraphics"]], 
+                AllowKernelInitialization -> False]], {
+              FormatType -> TraditionalForm, FrameTicks -> None, 
+               ImageSize -> {Automatic, 40}, PlotRangePadding -> 0.3, 
+               DefaultBaseStyle -> "NetworkGraphics"}], Deploy, 
+             DefaultBaseStyle -> "Deploy"], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Cores: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Max \[Chi]: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["4", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Tensor dims: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"2", ",", "3", ",", "4"}], "}"}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Bond dimensions: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"2", ",", "4"}], "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Stored elements: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["44", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Dense elements: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["24", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Compression: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\"\[Times]\"", "0.5`"}, "RowDefault"], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  RubenRanval`TensorTrainTools`TensorTrain[{{{{0.5543984122828868, 
+    0.8322514045997246}, {0.8322514045997246, -0.5543984122828868}}}, {{{
+    0.6082880283057396, 
+    0.21836278833459216`, -0.1463251050518107, -0.048020171292904784`}, {
+    0.42204167901188294`, -0.30920141295122006`, -0.16820295424362294`, \
+-0.2943700702839822}, {0.6634915823493994, -0.09876820492902652, 
+    0.21144056950510456`, 
+    0.34731952993173876`}}, {{-0.0005013901261936293, -0.5246200712752037, \
+-0.5158710093213258, -0.43932940619828775`}, {0.09528649246846245, 
+    0.28910379013573206`, 
+    0.5248309269210248, -0.7689850633531244}, {-0.05065223498756394, \
+-0.6986771786305631, 0.6033400494511083, 0.07785315785021321}}}, {{{
+    1.4466752065364896`}, {0.7076909904343894}, {0.9119705070971924}, {
+    1.0001155094854357`}}, {{0.33796040789737697`}, {-0.7037134013699676}, {
+    0.2646053117281319}, {-0.23219272875332334`}}, {{0.16462572554845017`}, {
+    0.3471482386886217}, {0.16023682808190248`}, {-0.6298921392187452}}, {{
+    0.08155860859099172}, {-0.0018359290139608752`}, {-0.11745311008792322`}, \
+{-0.00957466817392477}}}}],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.9933697235866547`*^9, {3.9933701828988056`*^9, 3.993370192659025*^9}, {
+   3.993370278009594*^9, 3.9933702810684605`*^9}, 3.9933732546886272`*^9, {
+   3.9933847181247463`*^9, 3.993384740582691*^9}, {3.993384773979414*^9, 
+   3.9933847822777615`*^9}},
+ CellLabel->"Out[24]=",
+ CellID->1277133,ExpressionUUID->"870fd5a6-4cae-e142-b3e7-293cac60944a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["TensorTrain",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            TagBox[
+             GraphicsBox[
+              NamespaceBox["NetworkGraphics", 
+               DynamicModuleBox[{Typeset`graph = HoldComplete[
+                   
+                   Graph[{"c1", "c2", "c3", "p1", "p2", "p3"}, {
+                    Null, {{1, 2}, {2, 3}, {1, 4}, {2, 5}, {3, 6}}}, {
+                    EdgeLabels -> {None}, EdgeStyle -> {
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]]}, ImageSize -> {Automatic, 40}, 
+                    PlotRangePadding -> 0.3, 
+                    VertexCoordinates -> {{1, 0}, {2, 0}, {3, 0}, {1, -0.8}, {
+                    2, -0.8}, {3, -0.8}}, VertexLabels -> {None}, 
+                    VertexSize -> {
+                    "p2" -> 0.01, "p1" -> 0.01, "c1" -> 0.5, "p3" -> 0.01, 
+                    "c2" -> 0.5, "c3" -> 0.5}, 
+                    VertexStyle -> {
+                    "p1" -> GrayLevel[0.5], "p2" -> GrayLevel[0.5], "c1" -> 
+                    RGBColor[0.35, 0.55, 0.85], "c2" -> 
+                    RGBColor[0.35, 0.55, 0.85], "p3" -> GrayLevel[0.5], "c3" -> 
+                    RGBColor[0.35, 0.55, 0.85]}}]]}, 
+                TagBox[
+                 GraphicsGroupBox[{{
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]], 
+                    LineBox[{{
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$2", Automatic, Center]}, {
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$4", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$3", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$5", Automatic, Center]}, {
+                    DynamicLocation["VertexID$3", Automatic, Center], 
+                    DynamicLocation["VertexID$6", Automatic, Center]}}]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$1"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$2"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$3"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$4"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$5"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$6"]}}], 
+                 MouseAppearanceTag["NetworkGraphics"]], 
+                AllowKernelInitialization -> False]], {
+              FormatType -> TraditionalForm, FrameTicks -> None, 
+               ImageSize -> {Automatic, 40}, PlotRangePadding -> 0.3, 
+               DefaultBaseStyle -> "NetworkGraphics"}], Deploy, 
+             DefaultBaseStyle -> "Deploy"], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Cores: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Max \[Chi]: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["4", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Tensor dims: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"2", ",", "3", ",", "4"}], "}"}], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            TagBox[
+             GraphicsBox[
+              NamespaceBox["NetworkGraphics", 
+               DynamicModuleBox[{Typeset`graph = HoldComplete[
+                   
+                   Graph[{"c1", "c2", "c3", "p1", "p2", "p3"}, {
+                    Null, {{1, 2}, {2, 3}, {1, 4}, {2, 5}, {3, 6}}}, {
+                    EdgeLabels -> {None}, EdgeStyle -> {
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]]}, ImageSize -> {Automatic, 40}, 
+                    PlotRangePadding -> 0.3, 
+                    VertexCoordinates -> {{1, 0}, {2, 0}, {3, 0}, {1, -0.8}, {
+                    2, -0.8}, {3, -0.8}}, VertexLabels -> {None}, 
+                    VertexSize -> {
+                    "p2" -> 0.01, "p1" -> 0.01, "c1" -> 0.5, "p3" -> 0.01, 
+                    "c2" -> 0.5, "c3" -> 0.5}, 
+                    VertexStyle -> {
+                    "p1" -> GrayLevel[0.5], "p2" -> GrayLevel[0.5], "c1" -> 
+                    RGBColor[0.35, 0.55, 0.85], "c2" -> 
+                    RGBColor[0.35, 0.55, 0.85], "p3" -> GrayLevel[0.5], "c3" -> 
+                    RGBColor[0.35, 0.55, 0.85]}}]]}, 
+                TagBox[
+                 GraphicsGroupBox[{{
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    Directive[
+                    Thickness[Large], 
+                    GrayLevel[0.4]], 
+                    LineBox[{{
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$2", Automatic, Center]}, {
+                    DynamicLocation["VertexID$1", Automatic, Center], 
+                    DynamicLocation["VertexID$4", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$3", Automatic, Center]}, {
+                    DynamicLocation["VertexID$2", Automatic, Center], 
+                    DynamicLocation["VertexID$5", Automatic, Center]}, {
+                    DynamicLocation["VertexID$3", Automatic, Center], 
+                    DynamicLocation["VertexID$6", Automatic, Center]}}]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$1"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$2"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., 0.}, 0.2], {
+                    RGBColor[0.35, 0.55, 0.85]}, StripOnInput -> False], 
+                    "DynamicName", BoxID -> "VertexID$3"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{1., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$4"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{2., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$5"], 
+                    TagBox[
+                    StyleBox[
+                    DiskBox[{3., -0.8}, 0.004], {
+                    GrayLevel[0.5]}, StripOnInput -> False], "DynamicName", 
+                    BoxID -> "VertexID$6"]}}], 
+                 MouseAppearanceTag["NetworkGraphics"]], 
+                AllowKernelInitialization -> False]], {
+              FormatType -> TraditionalForm, FrameTicks -> None, 
+               ImageSize -> {Automatic, 40}, PlotRangePadding -> 0.3, 
+               DefaultBaseStyle -> "NetworkGraphics"}], Deploy, 
+             DefaultBaseStyle -> "Deploy"], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Cores: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["3", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Max \[Chi]: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["4", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Tensor dims: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"2", ",", "3", ",", "4"}], "}"}], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Bond dimensions: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{"2", ",", "4"}], "}"}], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Stored elements: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["44", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Dense elements: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["24", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Compression: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\"\[Times]\"", "0.5`"}, "RowDefault"], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  RubenRanval`TensorTrainTools`TensorTrain[{{{{1.6631952368486602`, 
+    2.4967542137991736`}, {2.4967542137991736`, -1.6631952368486602`}}}, {{{
+    0.6082880283057396, 
+    0.21836278833459216`, -0.1463251050518107, -0.048020171292904784`}, {
+    0.42204167901188294`, -0.30920141295122006`, -0.16820295424362294`, \
+-0.2943700702839822}, {0.6634915823493994, -0.09876820492902652, 
+    0.21144056950510456`, 
+    0.34731952993173876`}}, {{-0.0005013901261936293, -0.5246200712752037, \
+-0.5158710093213258, -0.43932940619828775`}, {0.09528649246846245, 
+    0.28910379013573206`, 
+    0.5248309269210248, -0.7689850633531244}, {-0.05065223498756394, \
+-0.6986771786305631, 0.6033400494511083, 0.07785315785021321}}}, {{{
+    1.4466752065364896`}, {0.7076909904343894}, {0.9119705070971924}, {
+    1.0001155094854357`}}, {{0.33796040789737697`}, {-0.7037134013699676}, {
+    0.2646053117281319}, {-0.23219272875332334`}}, {{0.16462572554845017`}, {
+    0.3471482386886217}, {0.16023682808190248`}, {-0.6298921392187452}}, {{
+    0.08155860859099172}, {-0.0018359290139608752`}, {-0.11745311008792322`}, \
+{-0.00957466817392477}}}}],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{
+  3.9933697235866547`*^9, {3.9933701828988056`*^9, 3.993370192659025*^9}, {
+   3.993370278009594*^9, 3.9933702810684605`*^9}, 3.9933732546886272`*^9, {
+   3.9933847181247463`*^9, 3.993384740582691*^9}, {3.993384773979414*^9, 
+   3.9933847823411255`*^9}},
+ CellLabel->"Out[25]=",
+ CellID->97074524,ExpressionUUID->"d2efcf15-1db5-3d48-9362-058b60d5d378"]
+}, Open  ]]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -378,8 +1079,8 @@ Cell[BoxData[""], "Template",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{700, 770},
-WindowMargins->{{5, Automatic}, {Automatic, 0}},
+WindowSize->{622, 753},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules-><|"Paclet" -> "RubenRanval/TensorTrainTools"|>,
 CellContext->"Global`",
 FrontEndVersion->"15.0 for Microsoft Windows (64-bit) (May 19, 2026)",
@@ -393,14 +1094,14 @@ ExpressionUUID->"101032c1-5dd9-0d46-9bb9-4ebeeb8c0688"
 (*CellTagsOutline
 CellTagsIndex->{
  "ExtendedExamples"->{
-  Cell[6595, 207, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"0fa42809-a5f8-1f48-8716-01029f297cdd",
+  Cell[39839, 908, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"0fa42809-a5f8-1f48-8716-01029f297cdd",
    CellTags->"ExtendedExamples",
    CellID->87761313]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 12916, 394}
+ {"ExtendedExamples", 46160, 1095}
  }
 *)
 (*NotebookFileOutline
@@ -408,103 +1109,119 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[576, 22, 112, 1, 72, "ObjectName",ExpressionUUID->"6e53bd9d-c261-f744-82c8-00488b0ae6b6",
  CellID->75870541],
-Cell[691, 25, 1083, 26, 93, "Usage",ExpressionUUID->"2270b60f-ca3b-0c4c-9641-cca9fe33fff4",
+Cell[691, 25, 1075, 26, 76, "Usage",ExpressionUUID->"2270b60f-ca3b-0c4c-9641-cca9fe33fff4",
  CellID->25313002],
-Cell[1777, 53, 95, 1, 26, "Notes",ExpressionUUID->"f2c8c5df-082f-714e-982c-62985ce2b62a",
- CellID->51217028]
+Cell[1769, 53, 296, 6, 26, "Notes",ExpressionUUID->"f2c8c5df-082f-714e-982c-62985ce2b62a",
+ CellID->51217028],
+Cell[2068, 61, 407, 9, 26, "Notes",ExpressionUUID->"6666bef3-cb86-8e4a-b975-b403046f3d09",
+ CellID->176839653],
+Cell[2478, 72, 1275, 37, 26, "Notes",ExpressionUUID->"8948caf2-1a78-554d-a763-79c9ad3b9eac",
+ CellID->304569622]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1909, 59, 456, 13, 38, "SeeAlsoSection",ExpressionUUID->"2ea64819-9c6a-a84e-9bc7-04de813544de",
+Cell[3790, 114, 456, 13, 38, "SeeAlsoSection",ExpressionUUID->"2ea64819-9c6a-a84e-9bc7-04de813544de",
  CellID->5274607],
-Cell[2368, 74, 1543, 40, 21, "SeeAlso",ExpressionUUID->"8cf08867-7c6b-3241-9f99-079ba2fc1395",
+Cell[4249, 129, 1653, 42, 21, "SeeAlso",ExpressionUUID->"8cf08867-7c6b-3241-9f99-079ba2fc1395",
  CellID->407581454]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3948, 119, 433, 12, 39, "TechNotesSection",ExpressionUUID->"ea431516-595c-f540-ae65-b4408b230af6",
+Cell[5939, 176, 433, 12, 39, "TechNotesSection",ExpressionUUID->"ea431516-595c-f540-ae65-b4408b230af6",
  CellID->9672289],
-Cell[4384, 133, 100, 1, 17, "Tutorials",ExpressionUUID->"fcc5b4ef-c50f-e94d-815d-9896ff071def",
+Cell[6375, 190, 100, 1, 17, "Tutorials",ExpressionUUID->"fcc5b4ef-c50f-e94d-815d-9896ff071def",
  CellID->222720780]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4521, 139, 116, 1, 37, "MoreAboutSection",ExpressionUUID->"99c256e5-0a4a-df41-9e11-7bf3e2b36096",
+Cell[6512, 196, 116, 1, 37, "MoreAboutSection",ExpressionUUID->"99c256e5-0a4a-df41-9e11-7bf3e2b36096",
  CellID->91133405],
-Cell[4640, 142, 100, 1, 17, "MoreAbout",ExpressionUUID->"51996fc6-eae8-7b4b-bcf3-fb44766aef94",
+Cell[6631, 199, 100, 1, 17, "MoreAbout",ExpressionUUID->"51996fc6-eae8-7b4b-bcf3-fb44766aef94",
  CellID->144425470]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4777, 148, 472, 13, 38, "RelatedLinksSection",ExpressionUUID->"492cc174-998d-de47-8239-ccfe96538359",
+Cell[6768, 205, 472, 13, 38, "RelatedLinksSection",ExpressionUUID->"492cc174-998d-de47-8239-ccfe96538359",
  CellID->481329270],
-Cell[5252, 163, 103, 1, 17, "RelatedLinks",ExpressionUUID->"77dfc176-f7b6-264c-9028-89c13df9dd2b",
+Cell[7243, 220, 103, 1, 17, "RelatedLinks",ExpressionUUID->"77dfc176-f7b6-264c-9028-89c13df9dd2b",
  CellID->148193796]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5392, 169, 530, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"ea59cff1-e015-7648-ae5c-959d71206c82",
+Cell[7383, 226, 530, 14, 68, "ExamplesInitializationSection",ExpressionUUID->"ea59cff1-e015-7648-ae5c-959d71206c82",
  CellID->931487156],
-Cell[5925, 185, 188, 3, 45, "ExampleInitialization",ExpressionUUID->"a9e20a64-b66c-4648-a19a-6b33cb400dfb",
+Cell[7916, 242, 258, 4, 45, "ExampleInitialization",ExpressionUUID->"a9e20a64-b66c-4648-a19a-6b33cb400dfb",
  CellID->350672294]
 }, Open  ]],
-Cell[6128, 191, 442, 12, 69, "PrimaryExamplesSection",ExpressionUUID->"e4de4d88-2c83-174a-b988-889be9919d84",
- CellID->337466633],
 Cell[CellGroupData[{
-Cell[6595, 207, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"0fa42809-a5f8-1f48-8716-01029f297cdd",
+Cell[8211, 251, 442, 12, 69, "PrimaryExamplesSection",ExpressionUUID->"e4de4d88-2c83-174a-b988-889be9919d84",
+ CellID->337466633],
+Cell[8656, 265, 241, 4, 23, "ExampleText",ExpressionUUID->"8ceca0a6-ec9f-744f-b247-b1ee1a31203c",
+ CellID->139595402],
+Cell[CellGroupData[{
+Cell[8922, 273, 597, 13, 42, "Input",ExpressionUUID->"de8fa631-8f92-034c-a1b3-b265b6479f05",
+ CellID->127358575],
+Cell[9522, 288, 15130, 306, 66, "Output",ExpressionUUID->"870fd5a6-4cae-e142-b3e7-293cac60944a",
+ CellID->1277133],
+Cell[24655, 596, 15135, 306, 66, "Output",ExpressionUUID->"d2efcf15-1db5-3d48-9362-058b60d5d378",
+ CellID->97074524]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39839, 908, 486, 13, 56, "ExtendedExamplesSection",ExpressionUUID->"0fa42809-a5f8-1f48-8716-01029f297cdd",
  CellTags->"ExtendedExamples",
  CellID->87761313],
-Cell[7084, 222, 241, 5, 32, "ExampleSection",ExpressionUUID->"c00d3e4c-95de-ae40-b681-621bbcb4b853",
+Cell[40328, 923, 241, 5, 32, "ExampleSection",ExpressionUUID->"c00d3e4c-95de-ae40-b681-621bbcb4b853",
  CellID->109731329],
-Cell[7328, 229, 264, 5, 20, "ExampleSection",ExpressionUUID->"fba36947-abb5-b84b-bc3a-a3c39eb05b7f",
+Cell[40572, 930, 264, 5, 20, "ExampleSection",ExpressionUUID->"fba36947-abb5-b84b-bc3a-a3c39eb05b7f",
  CellID->287534873],
 Cell[CellGroupData[{
-Cell[7617, 238, 242, 5, 20, "ExampleSection",ExpressionUUID->"80f8ae4b-8d24-b54d-845c-2fa2532672ef",
+Cell[40861, 939, 242, 5, 20, "ExampleSection",ExpressionUUID->"80f8ae4b-8d24-b54d-845c-2fa2532672ef",
  CellID->43865821],
-Cell[7862, 245, 246, 5, 23, "ExampleSubsection",ExpressionUUID->"3b1a477b-cf84-1846-ba8c-a8999cbae20a",
+Cell[41106, 946, 246, 5, 23, "ExampleSubsection",ExpressionUUID->"3b1a477b-cf84-1846-ba8c-a8999cbae20a",
  CellID->145995936],
-Cell[8111, 252, 246, 5, 19, "ExampleSubsection",ExpressionUUID->"2b7b30d3-32c1-8442-ac15-612302063abf",
+Cell[41355, 953, 246, 5, 19, "ExampleSubsection",ExpressionUUID->"2b7b30d3-32c1-8442-ac15-612302063abf",
  CellID->135472127]
 }, Open  ]],
-Cell[8372, 260, 248, 5, 32, "ExampleSection",ExpressionUUID->"57d71727-ff20-1b49-a2f9-6850f220bb29",
+Cell[41616, 961, 248, 5, 32, "ExampleSection",ExpressionUUID->"57d71727-ff20-1b49-a2f9-6850f220bb29",
  CellID->499971373],
-Cell[8623, 267, 258, 5, 20, "ExampleSection",ExpressionUUID->"29fcb167-3c0a-e04c-b50b-0adc9953e82e",
+Cell[41867, 968, 258, 5, 20, "ExampleSection",ExpressionUUID->"29fcb167-3c0a-e04c-b50b-0adc9953e82e",
  CellID->258830657],
-Cell[8884, 274, 250, 5, 20, "ExampleSection",ExpressionUUID->"762b553f-4e2c-7849-a8e6-6905d4d5cdfb",
+Cell[42128, 975, 250, 5, 20, "ExampleSection",ExpressionUUID->"762b553f-4e2c-7849-a8e6-6905d4d5cdfb",
  CellID->15242319],
-Cell[9137, 281, 256, 5, 20, "ExampleSection",ExpressionUUID->"0297409e-d072-c546-bf6a-59a4468b492c",
+Cell[42381, 982, 256, 5, 20, "ExampleSection",ExpressionUUID->"0297409e-d072-c546-bf6a-59a4468b492c",
  CellID->307779695],
-Cell[9396, 288, 249, 5, 20, "ExampleSection",ExpressionUUID->"c03d4613-f8f1-fd44-84d7-28699785121e",
+Cell[42640, 989, 249, 5, 20, "ExampleSection",ExpressionUUID->"c03d4613-f8f1-fd44-84d7-28699785121e",
  CellID->422677621]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9682, 298, 110, 1, 71, "MetadataSection",ExpressionUUID->"8e2d038f-4bcb-9d40-8e5c-62b77af7ac48",
+Cell[42926, 999, 110, 1, 71, "MetadataSection",ExpressionUUID->"8e2d038f-4bcb-9d40-8e5c-62b77af7ac48",
  CellID->651830350],
-Cell[9795, 301, 473, 11, 25, "History",ExpressionUUID->"87db7832-ca5f-7b43-a518-24defacbbca5",
+Cell[43039, 1002, 473, 11, 25, "History",ExpressionUUID->"87db7832-ca5f-7b43-a518-24defacbbca5",
  CellID->173287199],
 Cell[CellGroupData[{
-Cell[10293, 316, 484, 13, 20, "CategorizationSection",ExpressionUUID->"aa1b2f41-5862-1442-a3e7-82c937d5b1c0",
+Cell[43537, 1017, 484, 13, 20, "CategorizationSection",ExpressionUUID->"aa1b2f41-5862-1442-a3e7-82c937d5b1c0",
  CellID->860040896],
-Cell[10780, 331, 134, 2, 34, "Categorization",ExpressionUUID->"f97606c2-71f1-d24d-8321-8ff6d0371574",
+Cell[44024, 1032, 134, 2, 70, "Categorization",ExpressionUUID->"f97606c2-71f1-d24d-8321-8ff6d0371574",
  CellID->202747200],
-Cell[10917, 335, 156, 2, 34, "Categorization",ExpressionUUID->"54974211-4d21-ad46-818c-b05ed0fcb0a8",
+Cell[44161, 1036, 156, 2, 70, "Categorization",ExpressionUUID->"54974211-4d21-ad46-818c-b05ed0fcb0a8",
  CellID->451409596],
-Cell[11076, 339, 153, 2, 34, "Categorization",ExpressionUUID->"333e5c57-8795-3e43-91ee-12d788070b33",
+Cell[44320, 1040, 153, 2, 70, "Categorization",ExpressionUUID->"333e5c57-8795-3e43-91ee-12d788070b33",
  CellID->551918791],
-Cell[11232, 343, 168, 2, 34, "Categorization",ExpressionUUID->"b0a0316f-7865-c64a-bc38-2f2e6bc6da91",
+Cell[44476, 1044, 168, 2, 70, "Categorization",ExpressionUUID->"b0a0316f-7865-c64a-bc38-2f2e6bc6da91",
  CellID->91323736]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[11437, 350, 109, 1, 20, "KeywordsSection",ExpressionUUID->"1594b9fc-a006-d746-81ef-6ae7964f2bd9",
+Cell[44681, 1051, 109, 1, 20, "KeywordsSection",ExpressionUUID->"1594b9fc-a006-d746-81ef-6ae7964f2bd9",
  CellID->54445547],
-Cell[11549, 353, 99, 1, 70, "Keywords",ExpressionUUID->"b2c64f7e-ec61-8845-b0c6-644e640f0749",
+Cell[44793, 1054, 99, 1, 70, "Keywords",ExpressionUUID->"b2c64f7e-ec61-8845-b0c6-644e640f0749",
  CellID->515175314]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[11685, 359, 118, 1, 20, "TemplatesSection",ExpressionUUID->"3203bf48-5046-2542-92ff-1730545712a7",
+Cell[44929, 1060, 118, 1, 20, "TemplatesSection",ExpressionUUID->"3203bf48-5046-2542-92ff-1730545712a7",
  CellID->32119619],
-Cell[11806, 362, 147, 2, 70, "Template",ExpressionUUID->"9670a388-87e6-3541-8f7f-1e2335edc66c",
+Cell[45050, 1063, 147, 2, 70, "Template",ExpressionUUID->"9670a388-87e6-3541-8f7f-1e2335edc66c",
  CellID->11428937],
-Cell[11956, 366, 136, 2, 70, "Template",ExpressionUUID->"946876ac-6703-7748-ae60-bcbe57b78f41",
+Cell[45200, 1067, 136, 2, 70, "Template",ExpressionUUID->"946876ac-6703-7748-ae60-bcbe57b78f41",
  CellID->55083034],
-Cell[12095, 370, 135, 2, 70, "Template",ExpressionUUID->"f517b126-9ae7-da41-acb2-0f785bd16a6e",
+Cell[45339, 1071, 135, 2, 70, "Template",ExpressionUUID->"f517b126-9ae7-da41-acb2-0f785bd16a6e",
  CellID->358832265],
-Cell[12233, 374, 137, 2, 70, "Template",ExpressionUUID->"22874bab-ad1a-5d41-8bb3-cdb91bd3c240",
+Cell[45477, 1075, 137, 2, 70, "Template",ExpressionUUID->"22874bab-ad1a-5d41-8bb3-cdb91bd3c240",
  CellID->101580434]
 }, Closed]]
 }, Open  ]]

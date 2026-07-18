@@ -11,17 +11,16 @@ BeginPackage["RubenRanval`TensorTrainTools`"];
 (*Declare your public symbols here:*)
 
 
-TensorTrain::usage = "TensorTrain[{\!\(\*SubscriptBox[\(A\), \(1\)]\), \!\(\*SubscriptBox[\(A\), \(2\)]\), ..., \!\(\*SubscriptBox[\(A\), \(n\)]\)] represents a tensor train."
-TensorTrainDecomposition::usage="TensorTrainDecomposition[tensor] decomposes the numeric array tensor into a tensor train, a list of rank-3 cores {\!\(\*SubscriptBox[\(A\), \(1\)]\), \!\(\*SubscriptBox[\(A\), \(2\)]\), ..., \!\(\*SubscriptBox[\(A\), \(n\)]\)}.";
-TensorTrainContract::usage="TensorTrainContract[tt] contracts a tensor train (a TensorTrain object, or a list of rank-3 cores {\!\(\*SubscriptBox[\(A\), \(1\)]\), \!\(\*SubscriptBox[\(A\), \(2\(,\)\(\\\ \)\)]\)..., \!\(\*SubscriptBox[\(A\), \(n\)]\)}) back into the dense array it represents.";
-TensorTrainCompress::usage="TensorTrainCompress[TensorTrain] returns a tensor train approximating TensorTrain with smaller bond dimensions, by right-orthogonalizing and then truncating each bond with an SVD sweep.";
-TensorTrainOrthogonalize::usage="TensorTrainOrthogonalize[TensorTrain] returns the tensor train TensorTrain in left-canonical form: cores 1..n-1 are made left-orthogonal by a QR sweep while the tensor represented is left unchanged. The option \"Direction\" -> \"Right\" gives right-canonical form (cores 2..n right-orthogonal) instead.";
-TensorTrainNorm::usage="TensorTrainNorm[TensorTrain] gives the Frobenius (Euclidean) norm of the tensor represented by the tensor train TensorTrain, computed by left-orthogonalizing and taking the norm of the single remaining core, without forming the dense tensor. The result is real and non-negative even for complex-valued trains.";
-TensorTrainInnerProduct::usage="TensorTrainInnerProduct[a, b] gives the inner product <a|b> = Sum conj(a[i]) b[i] of two tensor trains representing tensors of the same dimensions, contracted without forming the dense tensors. It is conjugate-linear in the first argument, and TensorTrainInnerProduct[a, a] equals TensorTrainNorm[a]^2.";
-TensorTrainHadamard::usage="TensorTrainHadamard[a, b] gives";
-TensorTrainPlus::usage="TensorTrainPlus[a, b] gives the tensor train representing the sum of the tensors a and b, which must have the same dimensions. The cores are stacked block-diagonally, so the bond dimensions add.";
-TensorTrainScale::usage="TensorTrainScale[c, tt] gives the tensor train representing c times the tensor tt, for a scalar c, by scaling a single core. The bond dimensions are unchanged.";
-RandomTensorTrain::usage="RandomTensorTrain[{\!\(\*SubscriptBox[\(n\), \(1\)]\), ..., \!\(\*SubscriptBox[\(n\), \(d\)]\)}] gives a random tensor train representing a tensor of dimensions \!\(\*SubscriptBox[\(n\), \(1\)]\)*...*\!\(\*SubscriptBox[\(n\), \(d\)]\). RandomTensorTrain[{\!\(\*SubscriptBox[\(n\), \(1\)]\), ..., \!\(\*SubscriptBox[\(n\), \(d\)]\)}, chi] sets every bond dimension to chi; RandomTensorTrain[{\!\(\*SubscriptBox[\(n\), \(1\)]\), ..., \!\(\*SubscriptBox[\(n\), \(d\)]\)}, {chi1, ..., chi(d-1)}] sets the bonds individually. Cores are filled with random reals in [-1, 1]; the option \"Complex\" -> True fills them with random complex entries instead.";
+TensorTrain::usage="TensorTrain[{\!\(\*SubscriptBox[\(A\), \(1\)]\), \[Ellipsis], \!\(\*SubscriptBox[\(A\), \(n\)]\)}] represents a tensor in tensor-train (matrix product) format with rank-3 cores \!\(\*SubscriptBox[\(A\), \(i\)]\)";
+TensorTrainDecomposition::usage="TensorTrainDecomposition[array] gives a tensor train representing the numeric array";
+TensorTrainContract::usage="TensorTrainContract[t] gives the dense array represented by the tensor train t, contracting all bond indices.";
+TensorTrainOrthogonalize::usage="TensorTrainOrthogonalize[t] gives a tensor train representing the same tensor as t, with all cores but the last in left-orthonormal form.";
+TensorTrainCompress::usage="TensorTrainCompress[t] gives a tensor train representing the same tensor as t with minimal bond dimensions";
+TensorTrainNorm::usage="TensorTrainNorm[tt] gives the Frobenius norm of the tensor represented by the tensor train tt";
+TensorTrainInnerProduct::usage="TensorTrainInnerProduct[a, b] gives the inner product of the tensors represented by the tensor trains a and b";
+TensorTrainPlus::usage="TensorTrainPlus[\!\(\*SubscriptBox[\(t\), \(1\)]\), \!\(\*SubscriptBox[\(t\), \(2\)]\), \[Ellipsis]] gives the sum of the tensor trains \!\(\*SubscriptBox[\(t\), \(i\)]\)";
+TensorTrainScale::usage="TensorTrainScale[c, t] gives the tensor train representing c times the tensor represented by t";
+TensorTrainHadamard::usage="TensorTrainHadamard[\!\(\*SubscriptBox[\(t\), \(1\)]\), \!\(\*SubscriptBox[\(t\), \(2\)]\), \[Ellipsis]] gives the elementwise (Hadamard) product of the tensor trains \!\(\*SubscriptBox[\(t\), \(i\)]\)";
 
 
 Begin["`Private`"];
