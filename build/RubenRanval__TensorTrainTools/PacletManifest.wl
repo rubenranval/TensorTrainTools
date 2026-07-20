@@ -11,7 +11,7 @@
             ,
             "Hash"
             ->
-            "05dda1b17ebdf2b09191305545b3543aece4a1499f2ad314ed3b73424383bc7a"
+            "5df2fe50e7fe83ae4cc40a8be41e20ad52e7173892a10bfc3edda7c907e19b3f"
                 
         |>
         ,
@@ -24,7 +24,7 @@
             ,
             "Hash"
             ->
-            "e182ecbe01240a9b2cce79587278730c7f6f3b886eb60b2fbeeb25fd6892b2dc"
+            "a6c52c1b7c6c39498d5ea2ed6a3575a6293a8cc9559427a3d219e93b559b6be0"
                 
         |>
         ,
@@ -50,7 +50,21 @@
             ,
             "Hash"
             ->
-            "c0161307e5d4840e5802b8b7cb46ad2b3557213958e7dce9bc2fb2225c93de49"
+            "007d45db671c044914bd797035aff20ad87799640d68c0c362d899668bcbae12"
+                
+        |>
+        ,
+        <|
+            "File"
+            ->
+            File[
+                "Documentation\\English\\Guides\\TensorTrainToolsOverview.nb"
+                    
+            ]
+            ,
+            "Hash"
+            ->
+            "83fd01f1637bc5e12612342614ca1f2ff9ea7e93988325ff3c1496e73e56e4ff"
                 
         |>
         ,
@@ -64,7 +78,7 @@
             ,
             "Hash"
             ->
-            "ab667104e828c58e5c79539216c90f31a24483c6640cd9f0201c55c09df93f1c"
+            "72f9686d83c04cf08904ee5f75a62acd8e4ec868947c818e4a4031f20c0735da"
                 
         |>
         ,
@@ -78,7 +92,7 @@
             ,
             "Hash"
             ->
-            "c5e3a47ad893d9c5a6b0f74cbd4ab45e0d3c186080e62b6478ddce7aaa0ec630"
+            "e34a888c2d42146bdb0f136f75cb6b8efa4c9eb84342eb73ec324509d42f162a"
                 
         |>
         ,
@@ -92,7 +106,7 @@
             ,
             "Hash"
             ->
-            "bb3d3899fd0724d1291aaa378a079b1bc9cb3d3ce8117c67c06967a8d367176f"
+            "2fce361a8df0e315317c2e8a0b6618589115766f04794060100cdcb15e436414"
                 
         |>
         ,
@@ -106,7 +120,7 @@
             ,
             "Hash"
             ->
-            "a7c3ef17d35ed058ea7bdda7a8bcc4446d8e22c2fbfa0f66dfd12fe467899edd"
+            "854c1ecf222ba6e6fbfae698c482016e754803f80023c37e37027e7d67827e67"
                 
         |>
         ,
@@ -120,7 +134,7 @@
             ,
             "Hash"
             ->
-            "17ed1d74816ffb79418dbfeb0fb4814dc1c3cdf280b1a9937cc10377402030b1"
+            "8572ff29a9023aa2a5be216801f762cb745d1a25baa32e4d0f8de1ba6970a263"
                 
         |>
         ,
@@ -134,7 +148,7 @@
             ,
             "Hash"
             ->
-            "0160631f39da60fff53c6f6a7d572b7e2836021aacc18d4c2960a589c8cab733"
+            "7475e524476901502cabcf873464cd3bb42fd3336d88ef73b22df26265d72a2a"
                 
         |>
         ,
@@ -148,7 +162,7 @@
             ,
             "Hash"
             ->
-            "e7d7f464c287c4bb9b4587bff27e3a3094fa200d9820bebd6383148c8ad2881d"
+            "88fce4b34d73691cc4614b6378bfb0463549b5b23a105588daab2edce89d8d95"
                 
         |>
         ,
@@ -162,7 +176,7 @@
             ,
             "Hash"
             ->
-            "f63f0082cdb7874dfafc6f8a35f7e4dec5d2362c54cb27f5439adc0b58d75d1a"
+            "f5e425029c821aa07852421741b46972c03228cb505ccae1eeaf70a9a3421446"
                 
         |>
         ,
@@ -176,7 +190,7 @@
             ,
             "Hash"
             ->
-            "680b3768eadd2a559e43bebce62051eab23d91feca5c5101927d8c10c7ce5577"
+            "fc9e9519a4896c8996074bbe604ca0953b48719a021badb44241de9a2a07022c"
                 
         |>
         ,
@@ -190,7 +204,7 @@
             ,
             "Hash"
             ->
-            "416c5fdb1af4959fbef63fed92e0d30d29d033f9b30c3b18c17e080327708a3d"
+            "474219a1b30aed824bedf0f59058b8ba0a6f9aaa744358d4343c1791c2d428b0"
                 
         |>
         ,
@@ -204,7 +218,7 @@
             ,
             "Hash"
             ->
-            "3aad9a1087b2648c5cf7d5d286c3a3742eefd6b5d48e3963bbd034eaec1b0a61"
+            "e7fbc8f11329f8119d6d43578a3438db06aa59a4dcc72c9e1717d654647f2d9b"
                 
         |>
     }

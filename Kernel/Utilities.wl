@@ -1,16 +1,7 @@
 (* ::Package:: *)
 
-(* ::Subsection:: *)
-(* Shared helpers *)
-
-
 ttValidMaxBondQ[chi_]:=chi===Infinity||(IntegerQ[chi]&&chi>=1);
 ttValidToleranceQ[eps_]:=NumericQ[eps]&&!Negative[eps];
-
-(* Number of singular values to keep so that the discarded tail satisfies
-   Sqrt[Total[discarded sigma^2]] <= eps, additionally capped at chimax and
-   floored at 1. sigma is assumed sorted in decreasing order (as returned
-   by SingularValueDecomposition). *)
 ttTruncationRank[sigma_,eps_,chimax_]:=
 	Clip[Count[Reverse@Accumulate[Reverse[sigma^2]],x_/;x>eps^2],
 		{1,Min[chimax,Length[sigma]]}];
@@ -55,8 +46,6 @@ TensorTrainDecomposition[tensor_,opts:OptionsPattern[]]:=Module[
 
 		Switch[method,
 			"SVD",
-			(*thin SVD: computing only Min[p, q] triples avoids building the
-			  full q x q right factor, which is huge in the first sweeps*)
 			{U,S,V}=SingularValueDecomposition[residual,Min[Dimensions[residual]]];
 			sigma=Diagonal@S;
 			rNew=ttTruncationRank[sigma,eps,chimax];
@@ -64,8 +53,6 @@ TensorTrainDecomposition[tensor_,opts:OptionsPattern[]]:=Module[
 			residual=S[[1;;rNew,1;;rNew]] . ConjugateTranspose[V[[All,1;;rNew]]],
 
 			"QR",
-			(*exact decomposition: QR reveals no spectrum, so Tolerance and
-			  MaxBondDimension are ignored and no truncation is performed*)
 			{q,R}=QRDecomposition[residual];
 			Q=ConjugateTranspose[q];
 			rNew=Dimensions[R][[1]];
@@ -84,8 +71,6 @@ TensorTrainDecomposition[tensor_,opts:OptionsPattern[]]:=Module[
 
 TensorTrainContract::notcores="Input must be a TensorTrain or a nonempty list of rank-3 arrays (tensor-train cores).";
 
-(*Dot contracts the last index of each partial result with the first index of
-  the next core; the final reshape drops the two singleton boundary indices*)
 TensorTrainContract[TensorTrain[cores_List]]:=
 	ArrayReshape[Fold[Dot,First@cores,Rest@cores],Dimensions[#][[2]]&/@cores];
 TensorTrainContract[cores_List]:=
@@ -139,9 +124,7 @@ TensorTrainCompress::badeps="Tolerance must be a non-negative number.";
 
 Options[TensorTrainCompress]={"MaxBondDimension"->Infinity,Tolerance->0};
 
-(*standard TT rounding: right-orthogonalize, then truncated-SVD sweep from the
-  left; the right-orthogonal environment makes each local truncation globally
-  optimal for that bond*)
+(* right-orthogonalize, then truncated-SVD sweep from the left *)
 TensorTrainCompress[TensorTrain[cores_List],OptionsPattern[]]:=Module[
 	{chimax=OptionValue["MaxBondDimension"],eps=OptionValue[Tolerance],
 	c,n=Length[cores],chiL,nk,chiR,mat,u,s,v,sigma,rNew,carry},
@@ -169,9 +152,7 @@ TensorTrainCompress[cores_List,opts:OptionsPattern[]]:=
 (* TensorTrainNorm *)
 
 
-(*left-orthogonalize, then the Frobenius norm is the Euclidean norm of the one
-  non-orthogonal core; numerically stabler than Sqrt[InnerProduct[t, t]],
-  which squares the conditioning*)
+(*left-orthogonalize then the Frobenius norm is the Euclidean norm of the one non-orthogonal core*)
 TensorTrainNorm[TensorTrain[cores_List]]:=Module[{c},
 	c=TensorTrainOrthogonalize[TensorTrain[cores],"Direction"->"Left"]["Cores"];
 	Norm[Flatten[Last[c]]]];
@@ -201,10 +182,10 @@ RandomTensorTrain[physDims_List,bondDims:(_Integer|{__Integer}),OptionsPattern[]
 		True,Message[RandomTensorTrain::badbonds,d-1];Return[$Failed]];
 	If[d>1,
 		total=Times@@physDims;
-		prefix=Rest@FoldList[Times,1,physDims];(*prefix[[k]] = n1...nk*)
+		prefix=Rest@FoldList[Times,1,physDims];
 		maxBonds=Table[Min[prefix[[k]],total/prefix[[k]]],{k,d-1}];
 		If[Or@@MapThread[#1>#2&,{bonds,maxBonds}],
-			Message[RandomTensorTrain::infeasible,bonds,maxBonds]]];(*warn, don't override*)
+			Message[RandomTensorTrain::infeasible,bonds,maxBonds]]];
 	fullBonds=Join[{1},bonds,{1}];
 	gen=If[TrueQ[OptionValue["Complex"]],
 		RandomReal[{-1,1},#]+I RandomReal[{-1,1},#]&,
@@ -212,4 +193,4 @@ RandomTensorTrain[physDims_List,bondDims:(_Integer|{__Integer}),OptionsPattern[]
 	TensorTrain[Table[gen[{fullBonds[[k]],physDims[[k]],fullBonds[[k+1]]}],{k,d}]]];
 
 RandomTensorTrain[physDims_List,opts:OptionsPattern[]]:=
-	RandomTensorTrain[physDims,2,opts];(*default small bond when omitted*)
+	RandomTensorTrain[physDims,2,opts];

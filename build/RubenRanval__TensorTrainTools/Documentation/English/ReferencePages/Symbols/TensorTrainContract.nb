@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     58307,       1480]
-NotebookOptionsPosition[     51107,       1325]
-NotebookOutlinePosition[     53180,       1376]
-CellTagsIndexPosition[     53137,       1373]
+NotebookDataLength[     60074,       1527]
+NotebookOptionsPosition[     52765,       1371]
+NotebookOutlinePosition[     54838,       1422]
+CellTagsIndexPosition[     54795,       1419]
 WindowTitle->TensorTrainContract
 WindowFrame->Normal*)
 
@@ -28,11 +28,11 @@ Cell[BoxData[GridBox[{
            "Spacer1"], Cell[
           "RUBEN RANVAL/ TENSOR TRAIN TOOLS SYMBOL", "PacletNameCell",
            TextAlignment->Center,ExpressionUUID->
-           "7f02c6fc-dfa7-0247-b42d-1f1233a3c08a"], 
+           "0a1f1fd9-eeef-2841-b818-96cbd689a2a6"], 
           TemplateBox[{8},
            "Spacer1"]}]],
          TextAlignment->Center,ExpressionUUID->
-         "419f9ff3-5c69-7e4e-b84d-f5a5387d877b"],
+         "89b13b83-1fc5-3e46-b96c-3e04e80d73c5"],
         Background->LightDarkSwitched[
           RGBColor[0.490196, 0.576471, 0.690196]],
         ItemSize->Full], ""}
@@ -53,8 +53,8 @@ Cell[BoxData[GridBox[{
             AspectRatio->1,
             ImageSize->20,
             PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
-           "22e1a489-c6cb-324d-abba-4058eab6244a"]
-         }],ExpressionUUID->"11764138-c7b5-1f4c-87ea-9e8eb91b3b4a"],
+           "47a33250-aa09-bc48-b875-14249a532b31"]
+         }],ExpressionUUID->"16130e7e-c1d9-0a4c-8ff4-6d409165bfe3"],
          StripOnInput->False],{
         StyleBox[
           "\"TensorContract\"", "SeeAlsoRelated", StripOnInput -> False] :> 
@@ -74,7 +74,35 @@ Cell[BoxData[GridBox[{
         MenuStyle->"SeeAlso"],
        MouseAppearanceTag["LinkHand"]]],
       LineSpacing->{1.4, 0},ExpressionUUID->
-      "7c07da9d-76f4-e241-9587-8814117026b7"],
+      "2b62fbdd-2df0-0244-b456-fef6aaaab1cf"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Related Guides",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "68332fe3-21dc-6045-9eac-87638a3e8e13"]
+         }],ExpressionUUID->"2740ae77-0f43-a847-9187-830c315bfe31"],
+         StripOnInput->False],{
+        "\"TensorTrainTools Overview\"" :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/guide/\
+TensorTrainToolsOverview"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"MoreAbout"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "57e2337b-e852-1b41-bf92-291ca0b6c7e5"],
      "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
 \[ThickSpace]",
      Cell[BoxData[
@@ -90,8 +118,8 @@ Cell[BoxData[GridBox[{
             AspectRatio->1,
             ImageSize->20,
             PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
-           "53ae9d7e-fd73-7b4d-a69f-bfa49f219896"]
-         }],ExpressionUUID->"796511af-c5fd-834a-8b15-34b0aa288ba4"],
+           "a2c0b8a9-85e6-8445-afe3-588b9802c876"]
+         }],ExpressionUUID->"bbcc3ab7-d3d5-894c-b1f1-2b19d8762401"],
          StripOnInput->False],{
         "\"RubenRanval/TensorTrainTools/ref/TensorTrainContract\"" :> None, 
          "\"Copy Wolfram Documentation Center URL\"" :> 
@@ -124,18 +152,14 @@ TensorTrainTools/ref/TensorTrainContract.html"], StandardForm]], "Input",
         MenuStyle->"URLMenu"],
        MouseAppearanceTag["LinkHand"]]],
       LineSpacing->{1.4, 0},ExpressionUUID->
-      "b74a4795-a3dd-9246-a99c-9cebd4913629"]
+      "07fb8375-11d8-2f4f-ab7d-85f4c217bcf1"]
     }], "AnchorBar",
      CacheGraphics->False,ExpressionUUID->
-     "651d1489-09a3-2e41-93e7-e1c3ee64ba78"]}
+     "761ac48d-289f-5a4f-b160-ecc1e7dc6341"]}
   }]], "AnchorBarGrid",
- GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
-     Scaled[0.65], {
-      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
-   "RowsIndexed" -> {}}},
- CellID->1,ExpressionUUID->"add5296b-67cc-a040-9ad8-2243da7d9aaf"],
+ CellID->1,ExpressionUUID->"7bbc2800-7e53-dd48-bad9-92f8fd7c464f"],
 
-Cell["RubenRanval`TensorTrainTools`", "ContextNameCell",ExpressionUUID->"14090c7b-c4e5-a54e-9ebf-9013beabad8e"],
+Cell["RubenRanval`TensorTrainTools`", "ContextNameCell",ExpressionUUID->"0f03fec3-ade5-024b-957a-1ad2db7e9440"],
 
 Cell[CellGroupData[{
 
@@ -143,17 +167,17 @@ Cell[BoxData[GridBox[{
    {Cell[TextData[{
      Cell[
      "TensorTrainContract", "ObjectName",ExpressionUUID->
-      "41a75634-6d96-ad4d-ae48-73ccedffb372"],
+      "af5f0b14-a1ad-c149-a410-305c1aade964"],
      Cell[BoxData[
       TemplateBox[{8},
-       "Spacer1"]],ExpressionUUID->"b5d5bb05-45bb-814f-8c57-0231c675114c"],
+       "Spacer1"]],ExpressionUUID->"e9aa4132-886a-af40-aea0-c5823016bf54"],
      Cell[BoxData[
      ""], "ObjectNameTranslation",ExpressionUUID->
-      "1bc4ce16-c41a-4c4a-96a5-d40082432000"]
-    }],ExpressionUUID->"65eea9df-3f19-0643-95b4-516ff03b9785"], 
+      "21245542-e21e-be4c-8993-e91c14324973"]
+    }],ExpressionUUID->"bad443e4-dbb7-6947-af0d-01975cdb7539"], 
     "\[SpanFromLeft]"}
-  }]], "ObjectNameGrid",ExpressionUUID->"f6a95f18-87ea-6e41-9986-\
-244ca21b166e"],
+  }]], "ObjectNameGrid",ExpressionUUID->"2178ab40-ec91-3946-bc92-\
+93606af2ef73"],
 
 Cell[BoxData[GridBox[{
    {"", Cell[TextData[{
@@ -168,16 +192,16 @@ Cell[BoxData[GridBox[{
         BaseStyle->"InlineFormula"], "[", 
        StyleBox["tt", "TI"], "]"}]], "InlineFormula",
       FontFamily->"Source Sans Pro",ExpressionUUID->
-      "488b5d2e-c74c-8741-a603-3cb32c5a8678"],
+      "172da59d-7ba5-f94b-9874-7aac47b63c59"],
      "\[LineSeparator]contracts a tensor train ",
      Cell[BoxData[
       StyleBox["tt", "TI"]], "InlineFormula",
       FontFamily->"Source Sans Pro",ExpressionUUID->
-      "e5450031-c486-ca41-a660-86f0a82ad947"],
+      "9944eaf7-dcde-cc45-afbb-d3885ab0bb6e"],
      " back into the dense array it represents"
-    }],ExpressionUUID->"bcd578af-1fa3-b844-adbc-bb6f6d6f175b"]}
+    }],ExpressionUUID->"0d37f9c9-c0e3-1f4b-be20-068bfe0f4647"]}
   }]], "Usage",
- CellID->57742026,ExpressionUUID->"336fe2db-002f-3647-9a20-5b0f76f7e107"]
+ CellID->57742026,ExpressionUUID->"af340567-d9b4-c44d-a57d-0f41d66fbf76"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -204,24 +228,24 @@ Cell[TextData[Cell[BoxData[Cell[TextData[{
         0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
     ImageSizeCache->{
      13.600000000000001`, {-0.16630131158046346`, 13.766301311580465`}}]],
-   ExpressionUUID->"0f26a49a-ab3e-1d40-9774-1ef2bfe7ed45"],
+   ExpressionUUID->"4abb852d-1be2-c040-90de-a1277f4a4786"],
   Cell[BoxData[
    TemplateBox[{1},
-    "Spacer1"]],ExpressionUUID->"72104125-752c-674d-891a-c9e3a49594bb"],
+    "Spacer1"]],ExpressionUUID->"6eaf04bc-f993-0741-99df-912172a15e77"],
   "Details and Options"
  }], "NotesFrameText",ExpressionUUID->
-  "e2a47aaa-88ab-ce4b-bf1f-a1fbdfddde5f"]],ExpressionUUID->"7ffac4b3-c74a-\
-b84d-ae0f-235432640978"]], "NotesSection",
+  "97f4858c-a47f-0346-9013-5cfacb6c7058"]],ExpressionUUID->"412eceda-e513-\
+1c48-a3d5-56ef708ed8a1"]], "NotesSection",
  ShowGroupOpener->"Thumbnail",
  WholeCellGroupOpener->True,
  CellGroupingRules->{"SectionGrouping", 50},
  CacheGraphics->False,
- CellID->985846350,ExpressionUUID->"529fc959-9f65-9845-a734-9902e7c63e5a"],
+ CellID->104245757,ExpressionUUID->"06b7e7a2-fb9a-d741-b2ff-430967f14e79"],
 
 Cell[TextData[{
  Cell[BoxData["TensorTrainContract"], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "742c6bb4-39b5-e24d-a691-6078554fa745"],
+  "9888beb8-c8e7-b943-a3e9-c4a2a2fedd12"],
  " reconstructs a full dense array from its Tensor Train (TT) representation \
 (also known as the Matrix Product State representation). It is the inverse of \
 ",
@@ -234,10 +258,10 @@ Cell[TextData[{
    "PackageLink",
    BaseStyle->"InlineFormula"]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "0b5de109-e436-a54f-85f7-c50c8aaa450b"],
+  "e44f5d31-3211-9444-85ca-71a27c6622be"],
  "."
 }], "Notes",
- CellID->10691157,ExpressionUUID->"fa25cfe3-f327-a741-80b3-3f2ce6f2a0ae"],
+ CellID->10691157,ExpressionUUID->"de0cba6f-fd0e-884f-884c-433df4945ba4"],
 
 Cell[TextData[{
  "The input is a nonempty list of rank-3 arrays ",
@@ -251,29 +275,29 @@ Cell[TextData[{
      SubscriptBox["A", 
       StyleBox["n", "TI"]]}], "}"}], TraditionalForm]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "bc660498-ef7c-aa4b-a624-08204815c163"],
+  "fd680f6b-675d-df4f-9443-bee76247c53b"],
  ", where ",
  Cell[BoxData[
   StyleBox["n", "TI"]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "ea395619-df6a-644b-86f2-296afd27c282"],
+  "42b50608-f3da-044b-b8e9-f5aad597e1b2"],
  " is the number of dimensions of the resulting array."
 }], "Notes",
- CellID->532595843,ExpressionUUID->"bfc17533-6a11-0442-8229-2c1563ba78af"],
+ CellID->532595843,ExpressionUUID->"66ee9376-2edb-fe46-a864-dc35000dfb59"],
 
 Cell["\<\
 The bond dimension refers to the size of the internal contracted indices \
 connecting adjacent tensor cores. It effectively dictates the rank and \
 compression level of the Tensor Train.\
 \>", "Notes",
- CellID->362833641,ExpressionUUID->"a9f0dbbd-51fc-7241-b1f2-42f9086ff387"],
+ CellID->362833641,ExpressionUUID->"9d6a662e-a3be-3a45-9f60-5ba9e587d5f0"],
 
 Cell[TextData[{
  "Each core ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["A", "k"], TraditionalForm]],ExpressionUUID->
-  "3a6c2d04-9c52-a345-9e08-60eeb695fe6e"],
+  "7445d010-288d-c342-8725-b150aa7d1436"],
  " has dimensions ",
  Cell[BoxData[
   FormBox[
@@ -284,37 +308,37 @@ Cell[TextData[{
      SubscriptBox["d", "k"], ",", 
      SubscriptBox["\[Chi]", "k"]}], "}"}], TraditionalForm]],
   InitializationCell->True,ExpressionUUID->
-  "98c04dd7-7bce-804a-82a9-21ea190ab28e"],
+  "dcf9863f-b948-e343-8424-10312b677b15"],
  " where ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["d", "k"], TraditionalForm]],ExpressionUUID->
-  "927cc33c-9bf8-bb48-b5df-50f76f6236d5"],
+  "13fe3c4d-9ef2-9b43-8bd5-8fe5ba3d26c4"],
  " is the size of the ",
  Cell[BoxData[
   FormBox[
    SuperscriptBox["k", "th"], TraditionalForm]],ExpressionUUID->
-  "1a68ba80-f56d-1247-a5e5-40da8926d897"],
+  "36ee43af-fc53-a14a-9b3c-e0465875eb51"],
  " dimension of the resulting array, and ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["\[Chi]", "k"], TraditionalForm]],
   InitializationCell->True,ExpressionUUID->
-  "3cd5c18b-81f3-ba45-b845-07a44f30b597"],
+  "ae3df3c9-042a-0741-9bf3-ee729b664f56"],
  " is the bond dimension between cores ",
  Cell[BoxData[
   StyleBox["k", "TI"]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "9e9bcbda-577a-fb46-9a90-61330ddc42c5"],
+  "80921c02-2bd8-1a45-8ce7-74f483740aa4"],
  " and ",
  Cell[BoxData[
   RowBox[{
    StyleBox["k", "TI"], "+", "1"}]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "ed62bb08-d691-794d-a347-03401f5f9386"],
+  "1e1108da-a5cf-f247-9aca-486f3a6aee0f"],
  "."
 }], "Notes",
- CellID->534729610,ExpressionUUID->"49d075c4-38bb-844f-8474-df399215a3ce"],
+ CellID->534729610,ExpressionUUID->"d56999bf-c9a9-be4d-b0fc-bce3eb47629a"],
 
 Cell[TextData[{
  "The first core has ",
@@ -322,16 +346,16 @@ Cell[TextData[{
   FormBox[
    RowBox[{
     SubscriptBox["\[Chi]", "0"], "=", "1"}], TraditionalForm]],ExpressionUUID->
-  "af999ec5-309b-324b-879b-2b08b9d83e51"],
+  "a92ffe9d-2586-fe44-9fe4-f2f212171f76"],
  " and the last core has ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     SubscriptBox["\[Chi]", "n"], "=", "1"}], TraditionalForm]],ExpressionUUID->
-  "b332ab44-00b3-d544-9f91-5f67c15ee153"],
+  "8faa5217-2cf4-c84b-bd76-fed4733dd65c"],
  "."
 }], "Notes",
- CellID->57498604,ExpressionUUID->"1d01683b-f780-6645-8f5c-0bdf18169052"],
+ CellID->57498604,ExpressionUUID->"3f1abc47-bf7d-1944-9448-2301fc55c858"],
 
 Cell[TextData[{
  "Contracting the cores returned by ",
@@ -344,12 +368,12 @@ Cell[TextData[{
    "PackageLink",
    BaseStyle->"InlineFormula"]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "aeb8fb6e-165c-f849-a2d7-5b4b68222fe2"],
+  "b82e47e2-6aba-ac4c-958a-6128e56b8594"],
  " reconstructs the original array, exactly up to floating-point error when \
 the decomposition was exact, or up to the truncation error when a ",
  Cell[BoxData["\"\<MaxBondDimension\>\""], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "ff3d083e-6ce6-074b-a031-9f4a415caf72"],
+  "6d635460-b866-9d42-9005-8bbf61ec57ca"],
  " cap or nonzero ",
  Cell[BoxData[
   TagBox[
@@ -363,10 +387,10 @@ the decomposition was exact, or up to the truncation error when a ",
     BaseStyle->{"InlineFormula"}],
    MouseAppearanceTag["LinkHand"]]], "InlineFormula",
   FontFamily->"Source Sans Pro",ExpressionUUID->
-  "b868e413-cecf-7844-a6f5-973d5a4f67ac"],
+  "0468023b-bb1b-ed48-97f0-de04c597c69d"],
  " was applied."
 }], "Notes",
- CellID->13324534,ExpressionUUID->"66c54a75-5056-5042-aaa5-32f3254fda72"]
+ CellID->13324534,ExpressionUUID->"e6ae7bd9-2b54-874a-bfc7-9caf54be0544"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -397,24 +421,24 @@ Cell[TextData[{
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
    ImageSizeCache->{
     13.600000000000001`, {4.2536986884195365`, 9.346301311580465}}]],
-  ExpressionUUID->"94464b93-882f-3347-ac29-ea1f040f7f45"],
+  ExpressionUUID->"16e8cab0-fa9d-f946-8b2a-6b5af5e2d96e"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"a3cf343c-5611-2d4e-a8b3-7bfe213b88d4"],
+   "Spacer1"]],ExpressionUUID->"3b9f029b-6825-4349-b63d-ca6037e187f3"],
  "Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(3)", "ExampleCount",ExpressionUUID->
-  "3013eaf5-d4b8-2e4e-ad3b-d8b41dbbd926"]
+  "110e1c75-81c3-344f-a63d-903b66e023cd"]
 }], "PrimaryExamplesSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
- CellID->264451518,ExpressionUUID->"cdbda58e-fa84-0046-99fe-813519d32a5b"],
+ CellID->307206983,ExpressionUUID->"101a95d6-756e-164d-993e-591832f2dbd8"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<RubenRanval`TensorTrainTools`\>\"", 
   "]"}]], "Input", "ExampleInitialization",
  CellLabel->"In[1]:=",
- CellID->619083443,ExpressionUUID->"bee04c9d-44f0-5440-842d-aefd752e310c"],
+ CellID->619083443,ExpressionUUID->"fd6e91df-ac5c-1845-ab30-c083912e632c"],
 
 Cell[CellGroupData[{
 
@@ -438,23 +462,23 @@ Cell[TextData[{
          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]]]],ExpressionUUID->
-  "492fa9e6-9a27-1940-bfe8-ea7c8b1a9870"],
+  "cfc378cb-9297-a947-b5d0-52e560484f14"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"8c9a4e26-0269-5f44-8cf7-b4d57533db5e"],
+   "Spacer1"]],ExpressionUUID->"fb386601-0a6c-3c4e-8e90-3dfdc932c5a8"],
  "Basic Examples",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(1)", "ExampleCount",ExpressionUUID->
-  "be946a22-1a62-3a44-bed0-4d09441e9285"]
+  "288a62c1-0891-8b42-8472-3e9c8006c10b"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
- CellID->164678497,ExpressionUUID->"c0807d67-a021-3e4d-8ec4-a46de7c92e4e"],
+ CellID->210586785,ExpressionUUID->"d6a4c9b3-d0ba-4646-8024-0a39f4b8b183"],
 
 Cell["\<\
 Decompose a tensor and contract it back to recover the original array:\
 \>", "ExampleText",
- CellID->240237425,ExpressionUUID->"9c86befe-56d4-c841-be5a-568ccfa7ad8b"],
+ CellID->240237425,ExpressionUUID->"b54a46d6-1866-7345-b8b7-9afa0e376542"],
 
 Cell[CellGroupData[{
 
@@ -468,7 +492,7 @@ Cell[BoxData[{
  RowBox[{"tensor", "//", "MatrixForm"}]}], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[1]:=",
- CellID->31122699,ExpressionUUID->"11d7216d-b685-814a-ae9d-9d35ce090190"],
+ CellID->31122699,ExpressionUUID->"5dc0e009-1049-2243-8abe-992d56169af7"],
 
 Cell[BoxData[
  TagBox[
@@ -583,7 +607,7 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellLabel->"Out[1]//MatrixForm=",
- CellID->581084252,ExpressionUUID->"0363c968-8e44-6e45-b24a-1fea3c200dba"]
+ CellID->581084252,ExpressionUUID->"56420a9e-ece3-9648-a20b-9a651469a537"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -593,7 +617,7 @@ Cell[BoxData[
   RowBox[{"TensorTrainDecomposition", "@", "tensor"}]}]], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[2]:=",
- CellID->79715812,ExpressionUUID->"3526c652-1b39-9844-849a-2b7905ede734"],
+ CellID->79715812,ExpressionUUID->"a3e18905-49d1-8046-ad13-03b7367e3950"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -899,7 +923,7 @@ Cell[BoxData[
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellLabel->"Out[2]=",
- CellID->99317541,ExpressionUUID->"2c36ad33-1841-da42-9d59-8e8015176255"]
+ CellID->99317541,ExpressionUUID->"a2985f06-5353-b049-a9fd-8ad289f75f7d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -909,7 +933,7 @@ Cell[BoxData[
   RowBox[{"TensorTrainContract", "@", "%"}]}]], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[3]:=",
- CellID->496541511,ExpressionUUID->"6f4bb6a1-7d8c-b64c-82e8-2fd6a42b9f79"],
+ CellID->496541511,ExpressionUUID->"04dc19b3-658e-c34f-98d6-e29541192548"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -944,7 +968,7 @@ Cell[BoxData[
        "0.8687634682217545`", ",", "0.02709995382964409`"}], "}"}]}], "}"}]}],
    "}"}]], "Output",
  CellLabel->"Out[3]=",
- CellID->175558159,ExpressionUUID->"49950123-332e-2449-b571-9acdcf1eac58"]
+ CellID->175558159,ExpressionUUID->"090d894d-fd9b-014f-9817-169ebb838352"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -953,7 +977,7 @@ Cell[BoxData[
  RowBox[{"%", "//", "MatrixForm"}]], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[4]:=",
- CellID->263679622,ExpressionUUID->"2b66a93e-c6e0-634b-8260-d789b84b0b07"],
+ CellID->263679622,ExpressionUUID->"d8d51971-0b11-f24d-8dc7-5b3c7a1f0173"],
 
 Cell[BoxData[
  TagBox[
@@ -1068,14 +1092,14 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellLabel->"Out[4]//MatrixForm=",
- CellID->53825083,ExpressionUUID->"c107e3ac-e2b9-2644-afdd-2680b3570e11"]
+ CellID->53825083,ExpressionUUID->"65aa6cd3-41b8-bd49-8319-7f922c095763"]
 }, Open  ]],
 
 Cell["\<\
 The original and the reconstructed tensors are exactly equal up to \
 floating-point error:\
 \>", "ExampleText",
- CellID->206612498,ExpressionUUID->"fbe5f4ba-e153-3e49-98e8-b20627495427"],
+ CellID->206612498,ExpressionUUID->"f5fc2c44-bcb0-e446-927f-b8d33efe35ed"],
 
 Cell[CellGroupData[{
 
@@ -1085,11 +1109,11 @@ Cell[BoxData[
    RowBox[{"tensor", "-", "recon"}], "]"}], "]"}]], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[5]:=",
- CellID->350254802,ExpressionUUID->"8565f012-aa64-4f43-9426-274ba17f1836"],
+ CellID->350254802,ExpressionUUID->"09a24b16-0d83-1e44-b446-dced819f6405"],
 
 Cell[BoxData["9.992007221626409`*^-16"], "Output",
  CellLabel->"Out[5]=",
- CellID->132477271,ExpressionUUID->"fa4b18b4-bb11-2f4c-9a39-2d35c56751c4"]
+ CellID->132477271,ExpressionUUID->"816fb332-8f7d-ac42-ae11-14dcff6fc591"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1115,25 +1139,25 @@ Cell[TextData[{
          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]]]],ExpressionUUID->
-  "cc5634b5-70ac-414b-929a-32cb8cc648a0"],
+  "8db5bdf6-53c3-804f-be50-509880a925ac"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"24adf1c0-1dae-3749-8174-1446e0a901e9"],
+   "Spacer1"]],ExpressionUUID->"b7759dd9-83c3-6141-8c1f-fe2980291359"],
  "Applications",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(1)", "ExampleCount",ExpressionUUID->
-  "fbb94711-5689-c942-999f-cad77415e9cc"]
+  "a7b5be3e-6bdf-2748-bdd3-be7bb17e5385"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
- CellID->421227442,ExpressionUUID->"223fb57b-46c4-8345-a6b5-cfeef0d61b4e"],
+ CellID->421227442,ExpressionUUID->"73515ecb-0e3c-7944-a7bd-94ed62adacfc"],
 
 Cell["\<\
 Because contraction works on any valid train, you can decompose with a capped \
 bond dimension and contract the result to obtain a low-rank approximation of \
 the original tensor. The difference is the truncation error:\
 \>", "ExampleText",
- CellID->669699521,ExpressionUUID->"b06a41f6-1d50-544b-a385-5356bc777772"],
+ CellID->669699521,ExpressionUUID->"372e7890-060b-8a4f-b159-fa14a2633bc7"],
 
 Cell[CellGroupData[{
 
@@ -1159,11 +1183,11 @@ Cell[BoxData[{
    RowBox[{"largeTensor", "-", "approx"}], "]"}], "]"}]}], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[1]:=",
- CellID->436603722,ExpressionUUID->"3184f2ee-bc70-d547-b394-13a811f0fc3b"],
+ CellID->436603722,ExpressionUUID->"730cf186-537a-e547-a909-b499c5e780ed"],
 
 Cell[BoxData["0.6355494752145587`"], "Output",
  CellLabel->"Out[1]=",
- CellID->615655830,ExpressionUUID->"67cc2edb-42ac-9146-8996-a80f56a830a2"]
+ CellID->615655830,ExpressionUUID->"925f1ee1-d848-2341-9a3d-8dc0332db694"]
 }, Open  ]]
 }, Closed]],
 
@@ -1189,24 +1213,24 @@ Cell[TextData[{
          Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
         PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
        0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]]]],ExpressionUUID->
-  "a40e5699-9318-b042-a10a-81c251d9d0a9"],
+  "ad0f0482-b576-0d4f-a003-692cc05b4b54"],
  Cell[BoxData[
   TemplateBox[{1},
-   "Spacer1"]],ExpressionUUID->"c2dc65b6-bc41-9b4e-8edc-b1adeead8e42"],
+   "Spacer1"]],ExpressionUUID->"b71c9e79-5708-4244-a30c-6e55067d238c"],
  "Possible Issues",
  "\[NonBreakingSpace]\[NonBreakingSpace]",
  Cell["(1)", "ExampleCount",ExpressionUUID->
-  "f0b2cc2d-743d-7140-902b-213512de7dd0"]
+  "f7cd7cce-5201-1043-9c83-4ca57118949d"]
 }], "ExampleSection", "ExampleSection",
  WholeCellGroupOpener->True,
  CacheGraphics->False,
- CellID->405511704,ExpressionUUID->"bc134366-324c-9f4a-ad1e-8a8ae5558a6a"],
+ CellID->405511704,ExpressionUUID->"f1921950-f48b-034e-89e1-de9f8de7b2b1"],
 
 Cell["\<\
 Cores whose adjacent bond dimensions do not match cannot be contracted (here \
 3 \[NotEqual] 4):\
 \>", "ExampleText",
- CellID->608917904,ExpressionUUID->"c4fedaf3-8ee4-5144-82b7-97539f661b0c"],
+ CellID->608917904,ExpressionUUID->"86bded73-1024-c740-ac6c-9ebfcbf6445d"],
 
 Cell[CellGroupData[{
 
@@ -1225,7 +1249,7 @@ Cell[BoxData[
   "]"}]], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[1]:=",
- CellID->87851459,ExpressionUUID->"156ab959-1ad3-324d-abd4-45907a5c4c8f"],
+ CellID->87851459,ExpressionUUID->"1fdbb342-6442-f24b-99bf-21f221185fb9"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1237,17 +1261,17 @@ Cell[BoxData[
   "MessageTemplate2",
   BaseStyle->"MSG"]], "Message",
  CellLabel->"During evaluation of In[1]:=",
- CellID->123241018,ExpressionUUID->"524b15f4-cff1-f246-addb-71134baf29dc"],
+ CellID->123241018,ExpressionUUID->"d5f8a2eb-59eb-7a4e-b6b7-d173123c82ca"],
 
 Cell[BoxData["$Failed"], "Output",
  CellLabel->"Out[1]=",
- CellID->6334423,ExpressionUUID->"d55f8e78-c0bf-7c43-8dad-ee920f6e82a0"]
+ CellID->6334423,ExpressionUUID->"1555dc43-a8d3-2a4b-a3c1-5862ae169c83"]
 }, Open  ]],
 
 Cell["\<\
 The first and last cores must have boundary bond dimension 1:\
 \>", "ExampleText",
- CellID->16223174,ExpressionUUID->"1ba92a04-bc81-fa44-a80d-511abd14cc34"],
+ CellID->16223174,ExpressionUUID->"2943e02b-db12-d34c-b090-37589735a34a"],
 
 Cell[CellGroupData[{
 
@@ -1261,7 +1285,7 @@ Cell[BoxData[
   "]"}]], "Input",
  CellProlog:>Needs["RubenRanval`TensorTrainTools`"],
  CellLabel->"In[2]:=",
- CellID->920892606,ExpressionUUID->"2f1c7b6e-5f61-0940-be7f-bdcff871da44"],
+ CellID->920892606,ExpressionUUID->"7e2e804f-0827-3848-acfc-5dd9ddeb773e"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1273,11 +1297,11 @@ Cell[BoxData[
   "MessageTemplate2",
   BaseStyle->"MSG"]], "Message",
  CellLabel->"During evaluation of In[2]:=",
- CellID->998082389,ExpressionUUID->"242ae14d-2d1b-844f-a9ea-96bac884ecc3"],
+ CellID->998082389,ExpressionUUID->"a58f8e6f-0398-784e-9865-1d1cebc2f604"],
 
 Cell[BoxData["$Failed"], "Output",
  CellLabel->"Out[2]=",
- CellID->258714284,ExpressionUUID->"88277824-90c6-014d-938c-706da9023929"]
+ CellID->258714284,ExpressionUUID->"79e03a6c-d64c-1748-b193-f13bf6ccc105"]
 }, Open  ]]
 }, Closed]]
 }, Open  ]],
@@ -1301,7 +1325,7 @@ Cell[BoxData[GridBox[{
           "PackageLink",
           BaseStyle->"InlineFormula"]], "InlineFormula",
          FontFamily->"Source Sans Pro",ExpressionUUID->
-         "48ad9d3c-fed3-cd42-a355-546f3ffd0ea1"],
+         "2129f5c7-6ca3-9c4a-aaee-24e01a14cb4b"],
         "\[NonBreakingSpace]",
         StyleBox[
         "\[MediumSpace]\[FilledVerySmallSquare]\[MediumSpace]", 
@@ -1315,13 +1339,35 @@ Cell[BoxData[GridBox[{
           BaseStyle->{"InlineFormula"}]], "InlineFormula",
          FontFamily->"Source Sans Pro",
          CellTags->"5d829038-bb41-4a78-afb6-1168f2278cf5",ExpressionUUID->
-         "fb709690-0943-9146-9d29-ef151520b1ed"]
-       }], "SeeAlso",ExpressionUUID->"b63c464e-9f8e-e94b-8ca8-c172ce25e903"]}
+         "da1d2968-ac49-9440-8755-11207c7b00fa"]
+       }], "SeeAlso",ExpressionUUID->"9d23967f-1206-bb4e-b981-9be7477e188c"]}
      }]}
-  }]], "SeeAlsoSection",ExpressionUUID->"54b16c6d-3818-534e-b7f3-\
-5328c83be9b6"],
+  }]], "SeeAlsoSection",ExpressionUUID->"152d1c84-9ad5-6148-941e-\
+c80b844f7c5e"],
 
-Cell[" ", "FooterCell",ExpressionUUID->"25454efc-eea6-bb44-b239-2d0a0de71464"]
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, "RelatedGuide.png"]],
+     ImageSizeCache->{50., {26.47265625, 33.52734375}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"Related", " ", "Guides"}], "MoreAboutSection"]},
+      {
+       RowBox[{"\[FilledVerySmallSquare]", Cell[BoxData[
+         TemplateBox[{
+           Cell[
+            TextData["TensorTrainTools Overview"]], 
+           "paclet:RubenRanval/TensorTrainTools/guide/\
+TensorTrainToolsOverview"},
+          "RefLinkPlain",
+          BaseStyle->{"MoreAbout"}]], "MoreAbout",ExpressionUUID->
+         "23906d99-1eac-074f-bec2-94bca0712380"]}]}
+     }]}
+  }]], "MoreAboutSection",ExpressionUUID->"cbedf2f3-08ab-854c-a30b-\
+380abee899c4"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"b5c722bf-7616-4c4c-b4eb-8d242fde48f4"]
 },
 Saveable->False,
 ScreenStyleEnvironment->"Working",
@@ -1338,7 +1384,7 @@ TaggingRules->{
   "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
   True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
   "Metadata" -> {
-   "built" -> "{2026, 7, 18, 22, 49, 15.6281739}", 
+   "built" -> "{2026, 7, 20, 11, 11, 33.1460768}", 
     "history" -> {"XX", "", "", ""}, "context" -> 
     "RubenRanval`TensorTrainTools`", "keywords" -> {}, 
     "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
@@ -1362,7 +1408,7 @@ StyleDefinitions->Notebook[{
     StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
   FrontEndVersion -> "15.0 for Microsoft Windows (64-bit) (May 19, 2026)", 
   StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
-ExpressionUUID->"cd27637d-e820-3645-bf7e-60c55d1430ec"
+ExpressionUUID->"f7197e92-232d-d047-95bb-b6bb11f79497"
 ]
 (* End of Notebook Content *)
 
@@ -1375,113 +1421,114 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[587, 21, 4857, 114, 70, "AnchorBarGrid",ExpressionUUID->"add5296b-67cc-a040-9ad8-2243da7d9aaf",
+Cell[587, 21, 5753, 138, 70, "AnchorBarGrid",ExpressionUUID->"7bbc2800-7e53-dd48-bad9-92f8fd7c464f",
  CellID->1],
-Cell[5333, 137, 111, 0, 70, "ContextNameCell",ExpressionUUID->"14090c7b-c4e5-a54e-9ebf-9013beabad8e"],
+Cell[6205, 161, 111, 0, 70, "ContextNameCell",ExpressionUUID->"0f03fec3-ade5-024b-957a-1ad2db7e9440"],
 Cell[CellGroupData[{
-Cell[5469, 141, 576, 14, 70, "ObjectNameGrid",ExpressionUUID->"f6a95f18-87ea-6e41-9986-244ca21b166e"],
-Cell[6034, 157, 948, 22, 70, "Usage",ExpressionUUID->"336fe2db-002f-3647-9a20-5b0f76f7e107",
+Cell[6341, 165, 576, 14, 70, "ObjectNameGrid",ExpressionUUID->"2178ab40-ec91-3946-bc92-93606af2ef73"],
+Cell[6906, 181, 948, 22, 70, "Usage",ExpressionUUID->"af340567-d9b4-c44d-a57d-0f41d66fbf76",
  CellID->57742026]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6997, 184, 1483, 34, 70, "NotesSection",ExpressionUUID->"529fc959-9f65-9845-a734-9902e7c63e5a",
+Cell[7869, 208, 1483, 34, 70, "NotesSection",ExpressionUUID->"06b7e7a2-fb9a-d741-b2ff-430967f14e79",
  CellGroupingRules->{"SectionGrouping", 50},
- CellID->985846350],
-Cell[8449, 220, 789, 19, 70, "Notes",ExpressionUUID->"fa25cfe3-f327-a741-80b3-3f2ce6f2a0ae",
+ CellID->104245757],
+Cell[9321, 244, 789, 19, 70, "Notes",ExpressionUUID->"de0cba6f-fd0e-884f-884c-433df4945ba4",
  CellID->10691157],
-Cell[9222, 241, 738, 20, 70, "Notes",ExpressionUUID->"bfc17533-6a11-0442-8229-2c1563ba78af",
+Cell[10094, 265, 738, 20, 70, "Notes",ExpressionUUID->"66ee9376-2edb-fe46-a864-dc35000dfb59",
  CellID->532595843],
-Cell[9943, 263, 291, 5, 70, "Notes",ExpressionUUID->"a9f0dbbd-51fc-7241-b1f2-42f9086ff387",
+Cell[10815, 287, 291, 5, 70, "Notes",ExpressionUUID->"9d6a662e-a3be-3a45-9f60-5ba9e587d5f0",
  CellID->362833641],
-Cell[10232, 270, 1510, 46, 70, "Notes",ExpressionUUID->"49d075c4-38bb-844f-8474-df399215a3ce",
+Cell[11104, 294, 1510, 46, 70, "Notes",ExpressionUUID->"d56999bf-c9a9-be4d-b0fc-bce3eb47629a",
  CellID->534729610],
-Cell[11699, 318, 496, 15, 70, "Notes",ExpressionUUID->"1d01683b-f780-6645-8f5c-0bdf18169052",
+Cell[12571, 342, 496, 15, 70, "Notes",ExpressionUUID->"3f1abc47-bf7d-1944-9448-2301fc55c858",
  CellID->57498604],
-Cell[12183, 335, 1285, 33, 70, "Notes",ExpressionUUID->"66c54a75-5056-5042-aaa5-32f3254fda72",
+Cell[13055, 359, 1285, 33, 70, "Notes",ExpressionUUID->"e6ae7bd9-2b54-874a-bfc7-9caf54be0544",
  CellID->13324534]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[13472, 373, 1442, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"cdbda58e-fa84-0046-99fe-813519d32a5b",
- CellID->264451518],
-Cell[14880, 412, 224, 4, 70, "Input",ExpressionUUID->"bee04c9d-44f0-5440-842d-aefd752e310c",
+Cell[14344, 397, 1442, 37, 70, "PrimaryExamplesSection",ExpressionUUID->"101a95d6-756e-164d-993e-591832f2dbd8",
+ CellID->307206983],
+Cell[15752, 436, 224, 4, 70, "Input",ExpressionUUID->"fd6e91df-ac5c-1845-ab30-c083912e632c",
  CellID->619083443],
 Cell[CellGroupData[{
-Cell[15125, 420, 1266, 31, 70, "ExampleSection",ExpressionUUID->"c0807d67-a021-3e4d-8ec4-a46de7c92e4e",
- CellID->164678497],
-Cell[16363, 453, 179, 3, 70, "ExampleText",ExpressionUUID->"9c86befe-56d4-c841-be5a-568ccfa7ad8b",
+Cell[15997, 444, 1266, 31, 70, "ExampleSection",ExpressionUUID->"d6a4c9b3-d0ba-4646-8024-0a39f4b8b183",
+ CellID->210586785],
+Cell[17235, 477, 179, 3, 70, "ExampleText",ExpressionUUID->"b54a46d6-1866-7345-b8b7-9afa0e376542",
  CellID->240237425],
 Cell[CellGroupData[{
-Cell[16564, 460, 440, 10, 70, "Input",ExpressionUUID->"11d7216d-b685-814a-ae9d-9d35ce090190",
+Cell[17436, 484, 440, 10, 70, "Input",ExpressionUUID->"5dc0e009-1049-2243-8abe-992d56169af7",
  CellID->31122699],
-Cell[16997, 472, 4285, 113, 70, "Output",ExpressionUUID->"0363c968-8e44-6e45-b24a-1fea3c200dba",
+Cell[17869, 496, 4285, 113, 70, "Output",ExpressionUUID->"56420a9e-ece3-9648-a20b-9a651469a537",
  CellID->581084252]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21206, 590, 275, 5, 70, "Input",ExpressionUUID->"3526c652-1b39-9844-849a-2b7905ede734",
+Cell[22078, 614, 275, 5, 70, "Input",ExpressionUUID->"a3e18905-49d1-8046-ad13-03b7367e3950",
  CellID->79715812],
-Cell[21479, 597, 15217, 304, 70, "Output",ExpressionUUID->"2c36ad33-1841-da42-9d59-8e8015176255",
+Cell[22351, 621, 15217, 304, 70, "Output",ExpressionUUID->"a2985f06-5353-b049-a9fd-8ad289f75f7d",
  CellID->99317541]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36429, 906, 260, 5, 70, "Input",ExpressionUUID->"6f4bb6a1-7d8c-b64c-82e8-2fd6a42b9f79",
+Cell[37301, 930, 260, 5, 70, "Input",ExpressionUUID->"04dc19b3-658e-c34f-98d6-e29541192548",
  CellID->496541511],
-Cell[36687, 913, 1287, 33, 70, "Output",ExpressionUUID->"49950123-332e-2449-b571-9acdcf1eac58",
+Cell[37559, 937, 1287, 33, 70, "Output",ExpressionUUID->"090d894d-fd9b-014f-9817-169ebb838352",
  CellID->175558159]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37978, 951, 214, 4, 70, "Input",ExpressionUUID->"2b66a93e-c6e0-634b-8260-d789b84b0b07",
+Cell[38850, 975, 214, 4, 70, "Input",ExpressionUUID->"d8d51971-0b11-f24d-8dc7-5b3c7a1f0173",
  CellID->263679622],
-Cell[38191, 957, 4280, 113, 70, "Output",ExpressionUUID->"c107e3ac-e2b9-2644-afdd-2680b3570e11",
+Cell[39063, 981, 4280, 113, 70, "Output",ExpressionUUID->"65aa6cd3-41b8-bd49-8319-7f922c095763",
  CellID->53825083]
 }, Open  ]],
-Cell[42373, 1073, 200, 4, 70, "ExampleText",ExpressionUUID->"fbe5f4ba-e153-3e49-98e8-b20627495427",
+Cell[43245, 1097, 200, 4, 70, "ExampleText",ExpressionUUID->"f5fc2c44-bcb0-e446-927f-b8d33efe35ed",
  CellID->206612498],
 Cell[CellGroupData[{
-Cell[42594, 1081, 276, 6, 70, "Input",ExpressionUUID->"8565f012-aa64-4f43-9426-274ba17f1836",
+Cell[43466, 1105, 276, 6, 70, "Input",ExpressionUUID->"09a24b16-0d83-1e44-b446-dced819f6405",
  CellID->350254802],
-Cell[42867, 1089, 150, 2, 70, "Output",ExpressionUUID->"fa4b18b4-bb11-2f4c-9a39-2d35c56751c4",
+Cell[43739, 1113, 150, 2, 70, "Output",ExpressionUUID->"816fb332-8f7d-ac42-ae11-14dcff6fc591",
  CellID->132477271]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[43064, 1097, 1264, 31, 70, "ExampleSection",ExpressionUUID->"223fb57b-46c4-8345-a6b5-cfeef0d61b4e",
+Cell[43936, 1121, 1264, 31, 70, "ExampleSection",ExpressionUUID->"73515ecb-0e3c-7944-a7bd-94ed62adacfc",
  CellID->421227442],
-Cell[44300, 1130, 330, 5, 70, "ExampleText",ExpressionUUID->"b06a41f6-1d50-544b-a385-5356bc777772",
+Cell[45172, 1154, 330, 5, 70, "ExampleText",ExpressionUUID->"372e7890-060b-8a4f-b159-fa14a2633bc7",
  CellID->669699521],
 Cell[CellGroupData[{
-Cell[44650, 1139, 883, 22, 70, "Input",ExpressionUUID->"3184f2ee-bc70-d547-b394-13a811f0fc3b",
+Cell[45522, 1163, 883, 22, 70, "Input",ExpressionUUID->"730cf186-537a-e547-a909-b499c5e780ed",
  CellID->436603722],
-Cell[45514, 1163, 146, 2, 70, "Output",ExpressionUUID->"67cc2edb-42ac-9146-8996-a80f56a830a2",
+Cell[46386, 1187, 146, 2, 70, "Output",ExpressionUUID->"925f1ee1-d848-2341-9a3d-8dc0332db694",
  CellID->615655830]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[45707, 1171, 1267, 31, 70, "ExampleSection",ExpressionUUID->"bc134366-324c-9f4a-ad1e-8a8ae5558a6a",
+Cell[46579, 1195, 1267, 31, 70, "ExampleSection",ExpressionUUID->"f1921950-f48b-034e-89e1-de9f8de7b2b1",
  CellID->405511704],
-Cell[46946, 1204, 206, 4, 70, "ExampleText",ExpressionUUID->"c4fedaf3-8ee4-5144-82b7-97539f661b0c",
+Cell[47818, 1228, 206, 4, 70, "ExampleText",ExpressionUUID->"86bded73-1024-c740-ac6c-9ebfcbf6445d",
  CellID->608917904],
 Cell[CellGroupData[{
-Cell[47173, 1212, 547, 15, 70, "Input",ExpressionUUID->"156ab959-1ad3-324d-abd4-45907a5c4c8f",
+Cell[48045, 1236, 547, 15, 70, "Input",ExpressionUUID->"1fdbb342-6442-f24b-99bf-21f221185fb9",
  CellID->87851459],
-Cell[47708, 1229, 522, 10, 70, "Message",ExpressionUUID->"524b15f4-cff1-f246-addb-71134baf29dc",
+Cell[48580, 1253, 522, 10, 70, "Message",ExpressionUUID->"d5f8a2eb-59eb-7a4e-b6b7-d173123c82ca",
  CellID->123241018],
-Cell[48223, 1241, 132, 2, 70, "Output",ExpressionUUID->"d55f8e78-c0bf-7c43-8dad-ee920f6e82a0",
+Cell[49095, 1265, 132, 2, 70, "Output",ExpressionUUID->"1555dc43-a8d3-2a4b-a3c1-5862ae169c83",
  CellID->6334423]
 }, Open  ]],
-Cell[48368, 1246, 169, 3, 70, "ExampleText",ExpressionUUID->"1ba92a04-bc81-fa44-a80d-511abd14cc34",
+Cell[49240, 1270, 169, 3, 70, "ExampleText",ExpressionUUID->"2943e02b-db12-d34c-b090-37589735a34a",
  CellID->16223174],
 Cell[CellGroupData[{
-Cell[48559, 1253, 385, 10, 70, "Input",ExpressionUUID->"2f1c7b6e-5f61-0940-be7f-bdcff871da44",
+Cell[49431, 1277, 385, 10, 70, "Input",ExpressionUUID->"7e2e804f-0827-3848-acfc-5dd9ddeb773e",
  CellID->920892606],
-Cell[48937, 1265, 466, 10, 70, "Message",ExpressionUUID->"242ae14d-2d1b-844f-a9ea-96bac884ecc3",
+Cell[49809, 1289, 466, 10, 70, "Message",ExpressionUUID->"a58f8e6f-0398-784e-9865-1d1cebc2f604",
  CellID->998082389],
-Cell[49396, 1277, 134, 2, 70, "Output",ExpressionUUID->"88277824-90c6-014d-938c-706da9023929",
+Cell[50268, 1301, 134, 2, 70, "Output",ExpressionUUID->"79e03a6c-d64c-1748-b193-f13bf6ccc105",
  CellID->258714284]
 }, Open  ]]
 }, Closed]]
 }, Open  ]],
-Cell[49567, 1284, 1492, 37, 70, "SeeAlsoSection",ExpressionUUID->"54b16c6d-3818-534e-b7f3-5328c83be9b6"],
-Cell[51025, 1323, 78, 0, 70, "FooterCell",ExpressionUUID->"25454efc-eea6-bb44-b239-2d0a0de71464"]
+Cell[50439, 1308, 1492, 37, 70, "SeeAlsoSection",ExpressionUUID->"152d1c84-9ad5-6148-941e-c80b844f7c5e"],
+Cell[51897, 1347, 803, 20, 70, "MoreAboutSection",ExpressionUUID->"cbedf2f3-08ab-854c-a30b-380abee899c4"],
+Cell[52683, 1369, 78, 0, 70, "FooterCell",ExpressionUUID->"b5c722bf-7616-4c4c-b4eb-8d242fde48f4"]
 }
 ]
 *)

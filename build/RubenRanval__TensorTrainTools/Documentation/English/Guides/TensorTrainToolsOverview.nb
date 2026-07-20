@@ -1,0 +1,455 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 15.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     17878,        446]
+NotebookOptionsPosition[     13971,        366]
+NotebookOutlinePosition[     15898,        409]
+CellTagsIndexPosition[     15855,        406]
+WindowTitle->TensorTrainTools Overview
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "RUBEN RANVAL/ TENSOR TRAIN TOOLS GUIDE", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "823d4803-f1d1-8c42-8546-ab16bac6c4f3"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "e4d09bf4-4b13-5c45-98d1-4d01745900be"],
+        Background->LightDarkSwitched[
+          RGBColor[0.85098, 0.396078, 0]],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Functions",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "ba8083f3-32d9-7d43-94b4-b487dd2741e0"]
+         }],ExpressionUUID->"b0653641-42e6-b74c-9e8d-08ecc96e578c"],
+         StripOnInput->False],{
+        StyleBox[
+          "\"RandomTensorTrain\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/RandomTensorTrain"], 
+         StyleBox["\"TensorTrain\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrain"], 
+         StyleBox[
+          "\"TensorTrainCompress\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainCompress"], 
+         StyleBox[
+          "\"TensorTrainContract\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainContract"], 
+         StyleBox[
+          "\"TensorTrainDecomposition\"", "SeeAlsoRelated", StripOnInput -> 
+           False] :> Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainDecomposition"],
+          StyleBox[
+          "\"TensorTrainHadamard\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainHadamard"], 
+         StyleBox[
+          "\"TensorTrainInnerProduct\"", "SeeAlsoRelated", StripOnInput -> 
+           False] :> Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainInnerProduct"], 
+         StyleBox[
+          "\"TensorTrainNorm\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainNorm"], 
+         StyleBox[
+          "\"TensorTrainOrthogonalize\"", "SeeAlsoRelated", StripOnInput -> 
+           False] :> Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainOrthogonalize"],
+          StyleBox[
+          "\"TensorTrainPlus\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainPlus"], 
+         StyleBox[
+          "\"TensorTrainScale\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainScale"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideFunction"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "7f8b8212-8a47-3640-b666-01546cca237b"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "0e55363f-66a5-3d45-a705-29fa7e82641d"]
+         }],ExpressionUUID->"f1113637-d7d7-6144-a14c-f35ed53354a9"],
+         StripOnInput->False],{
+        "\"RubenRanval/TensorTrainTools/guide/TensorTrainToolsOverview\"" :> 
+         None, "\"Copy Wolfram Documentation Center URL\"" :> 
+         CopyToClipboard[
+          "RubenRanval/TensorTrainTools/guide/TensorTrainToolsOverview"], 
+         Delimiter, "\"Copy web URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{
+               Cell[BoxData[
+                 MakeBoxes[
+                  Hyperlink[
+                   "http://reference.wolfram.com/language/RubenRanval/\
+TensorTrainTools/guide/TensorTrainToolsOverview.html"], StandardForm]], 
+                 "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+               False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+         "\"Go to web URL\"" :> 
+         FrontEndExecute[{
+           NotebookLocate[{
+             URL[If[TrueQ[False], 
+                 "http://reference.wolfram.com/system-modeler/", 
+                 "http://reference.wolfram.com/language/"] <> 
+               "RubenRanval/TensorTrainTools/guide/TensorTrainToolsOverview" <> 
+               ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "320e80e7-b30e-724d-b02e-718de6dbf349"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "08276de8-1310-564b-b59a-aeb4ed071b3f"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"8dd483b2-f52b-504b-bd55-2b174676c9d1"],
+
+Cell[CellGroupData[{
+
+Cell["TensorTrainTools Overview", "GuideTitle",
+ CellID->27779272,ExpressionUUID->"8cbb7c07-7426-0d4c-af8a-9e779887cc7a"],
+
+Cell["\<\
+Tensor trains represent high-rank tensors as chains of small cores, turning \
+exponentially large arrays into a compact format that supports decomposition, \
+compression, and arithmetic. The functions fall into a few natural groups: \
+construction, conversion to and from dense arrays, rank control and \
+arithmetic.\
+\>", "GuideAbstract",
+ CellID->107535106,ExpressionUUID->"2a3f5f77-ae45-da41-9fb7-e4d09ba6a1d8"],
+
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"f95efff0-41c2-1147-9eae-3ddc6eb8200b"],
+
+Cell[CellGroupData[{
+
+Cell["Construction", "GuideFunctionsSubsection",
+ CellID->71493741,ExpressionUUID->"faca3f5e-2ce4-bf4a-a3f0-eb03d1b72348"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrain"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrain", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
+  "81ebaccf-2c71-e84a-a48b-8956b7677b9e"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ "  represent a tensor as a train of rank-3 cores"
+}], "GuideText",
+ CellID->149328244,ExpressionUUID->"60b21cb2-5b79-1c4f-a3fd-ceef86b7bc52"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["RandomTensorTrain"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/RandomTensorTrain", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c5c6736a-1ff4-4e4e-8fcf-2d9846cbae62",ExpressionUUID->
+  "cc7e6067-48f9-f349-9cc4-39d1b43f86f4"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " create a random tensor train with given dimensions and bond dimensions"
+}], "GuideText",
+ CellID->151524192,ExpressionUUID->"f22e2aff-3634-6840-897e-cc591cb50430"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conversion", "GuideFunctionsSubsection",
+ CellID->18200883,ExpressionUUID->"dbdb2763-a656-0f45-bd35-6720a3698bcc"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainDecomposition"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainDecomposition", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"5102d319-6f06-434c-bd21-8dd4f4788300",ExpressionUUID->
+  "dc8b1141-db8f-3e4f-8b21-3b6f324384d9"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ "  decompose a dense array into a tensor train, with controlled truncation"
+}], "GuideText",
+ CellID->130507724,ExpressionUUID->"5913d508-8e58-f541-be4c-9b602b4e5f93"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainContract"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainContract", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"5102d319-6f06-434c-bd21-8dd4f4788300",ExpressionUUID->
+  "3891f3b1-1321-8f4b-9e77-08ac0628874c"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " assemble the dense array represented by a tensor train"
+}], "GuideText",
+ CellID->11073748,ExpressionUUID->"1064d9a3-f650-ad4b-894d-854ddb58c0c6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rank Control", "GuideFunctionsSubsection",
+ CellID->517247590,ExpressionUUID->"e4913e4e-fd52-b44c-8c02-e2a6bbf08020"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainCompress"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainCompress", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"5102d319-6f06-434c-bd21-8dd4f4788300",ExpressionUUID->
+  "2f13d58e-7f9a-2a4e-bbe5-cabfc72429b3"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " assemble the dense array represented by a tensor train"
+}], "GuideText",
+ CellID->152208173,ExpressionUUID->"fe12ca35-083a-c548-9e98-2ddb038a0fdd"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainOrthogonalize"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainOrthogonalize", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "2bb812a7-601e-bb4a-a4da-eabd096cc970"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainNorm"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainNorm", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"62ff50bf-4d93-454c-b1f7-3bc7895156f1",ExpressionUUID->
+  "c962a7ff-a9a3-0c4c-a5d9-764e802cbcf9"]
+}], "InlineGuideFunctionListing",
+ CellID->135594583,ExpressionUUID->"caec5aa7-82fb-4e4e-9281-4a4ef17f26df"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Arithmetic", "GuideFunctionsSubsection",
+ CellID->496486000,ExpressionUUID->"53caacfd-2f69-d648-85e8-8de06daf1b60"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainPlus"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainPlus", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",ExpressionUUID->
+  "d08e7670-65db-0c4a-88df-e13624754b54"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainHadamard"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainHadamard", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"d633d223-0c92-4c6e-bb40-e8dfed2fb41b",ExpressionUUID->
+  "987d27e8-1b67-e447-8e13-8a83775cb892"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainInnerProduct"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainInnerProduct", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"2fef2b9e-9aa0-4c7f-be41-295790cf110b",ExpressionUUID->
+  "23818a56-7522-a448-b844-4ac735190cd4"],
+ StyleBox[" \[FilledVerySmallSquare] ", "InlineSeparator"],
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["TensorTrainScale"]], 
+    "paclet:RubenRanval/TensorTrainTools/ref/TensorTrainScale", 
+    "RubenRanval Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c3f81cd8-a2db-4e34-9766-89bed3f66de9",ExpressionUUID->
+  "89a45fc1-d74a-7b47-88c1-328b08288e81"]
+}], "InlineGuideFunctionListing",
+ CellID->801938583,ExpressionUUID->"2362f2d1-8dff-844a-8a8d-510bbfd06841"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"a8501cf9-0002-3848-af61-04e5da551c84"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 789},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"TensorTrainTools Overview",
+Visible->True,
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> {$Failed, ""}, "ShowCitation" -> 
+  False, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2026, 7, 20, 11, 11, 6.6107397}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "RubenRanval`TensorTrainTools`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "Ruben Ranval/ Tensor Train Tools Guide", "language" -> "en", 
+    "paclet" -> "RubenRanval/TensorTrainTools", "status" -> "None", "summary" -> 
+    "Tensor trains represent high-rank tensors as chains of small cores, \
+turning exponentially large arrays into a compact format that supports \
+decomposition, compression, and arithmetic. The functions fall into a few \
+natural groups: construction, conversion to and from dense arrays, rank \
+control and arithmetic.", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "TensorTrainTools Overview", "titlemodifier" -> "", "metadescription" -> 
+    "", "windowtitle" -> "TensorTrainTools Overview", "type" -> "Guide", 
+    "uri" -> "RubenRanval/TensorTrainTools/guide/TensorTrainToolsOverview"}},
+CacheGraphics->False,
+FrontEndVersion->"15.0 for Microsoft Windows (64-bit) (May 19, 2026)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"f7197e92-232d-d047-95bb-b6bb11f79497"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[593, 21, 6541, 145, 70, "AnchorBarGrid",ExpressionUUID->"8dd483b2-f52b-504b-bd55-2b174676c9d1",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[7014, 170, 122, 1, 70, "GuideTitle",ExpressionUUID->"8cbb7c07-7426-0d4c-af8a-9e779887cc7a",
+ CellID->27779272],
+Cell[7138, 173, 431, 7, 70, "GuideAbstract",ExpressionUUID->"2a3f5f77-ae45-da41-9fb7-e4d09ba6a1d8",
+ CellID->107535106],
+Cell[7565, 182, 93, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"f95efff0-41c2-1147-9eae-3ddc6eb8200b"],
+Cell[CellGroupData[{
+Cell[7683, 186, 123, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"faca3f5e-2ce4-bf4a-a3f0-eb03d1b72348",
+ CellID->71493741],
+Cell[7808, 189, 577, 15, 70, "GuideText",ExpressionUUID->"60b21cb2-5b79-1c4f-a3fd-ceef86b7bc52",
+ CellID->149328244],
+Cell[8373, 206, 613, 15, 70, "GuideText",ExpressionUUID->"f22e2aff-3634-6840-897e-cc591cb50430",
+ CellID->151524192]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9008, 226, 121, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"dbdb2763-a656-0f45-bd35-6720a3698bcc",
+ CellID->18200883],
+Cell[9131, 229, 629, 15, 70, "GuideText",ExpressionUUID->"5913d508-8e58-f541-be4c-9b602b4e5f93",
+ CellID->130507724],
+Cell[9748, 246, 600, 15, 70, "GuideText",ExpressionUUID->"1064d9a3-f650-ad4b-894d-854ddb58c0c6",
+ CellID->11073748]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10370, 266, 124, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"e4913e4e-fd52-b44c-8c02-e2a6bbf08020",
+ CellID->517247590],
+Cell[10496, 269, 601, 15, 70, "GuideText",ExpressionUUID->"fe12ca35-083a-c548-9e98-2ddb038a0fdd",
+ CellID->152208173],
+Cell[11085, 286, 901, 22, 70, "InlineGuideFunctionListing",ExpressionUUID->"caec5aa7-82fb-4e4e-9281-4a4ef17f26df",
+ CellID->135594583]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12001, 313, 122, 1, 70, "GuideFunctionsSubsection",ExpressionUUID->"53caacfd-2f69-d648-85e8-8de06daf1b60",
+ CellID->496486000],
+Cell[12125, 316, 1781, 44, 70, "InlineGuideFunctionListing",ExpressionUUID->"2362f2d1-8dff-844a-8a8d-510bbfd06841",
+ CellID->801938583]
+}, Open  ]]
+}, Open  ]],
+Cell[13889, 364, 78, 0, 70, "FooterCell",ExpressionUUID->"a8501cf9-0002-3848-af61-04e5da551c84"]
+}
+]
+*)
+
+(* End of internal cache information *)

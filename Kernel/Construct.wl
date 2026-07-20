@@ -6,7 +6,6 @@ TensorTrain::bdry="Boundary bonds must both be 1, but are `1` (left) and `2` (ri
 TensorTrain::noprop="`1` is not a known property. Known properties: `2`.";
 
 
-(* A nonempty list whose elements are all rank-3 arrays *)
 tensorTrainCoreListQ[cores_]:=MatchQ[cores,{__?(ArrayQ[#,3]&)}];
 
 tensorTrainValidCoresQ[cores_]:=tensorTrainCoreListQ[cores]&&
@@ -61,18 +60,8 @@ TensorTrain/:Normal[TensorTrain[cores_List]]:=TensorTrainContract[cores];
 TensorTrain/:Length[TensorTrain[cores_List]]:=Length[cores];
 
 
-(* Operator sugar: delegate to the TensorTrain* functions when *every*
-   operand is a TensorTrain (plus numeric factors for Times); any other
-   combination fails to match and is left for the built-in evaluator. *)
-
-(* a + b + ... ; Plus is flat, so the n-ary sum is matched in one shot *)
 TensorTrain/:Plus[ts__TensorTrain]:=TensorTrainPlus[ts];
-
-(* a \[CircleDot] b \[CircleDot] ... ; CircleDot has no built-in meaning, so
-   non-matching cases simply remain unevaluated *)
 TensorTrain/:CircleDot[ts__TensorTrain]:=TensorTrainHadamard[ts];
-
-(* c*t, and hence -t and a-b via Plus[a, Times[-1, b]] *)
 TensorTrain/:Times[cs__?NumericQ,t_TensorTrain]:=TensorTrainScale[Times[cs],t];
 
 
