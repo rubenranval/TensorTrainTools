@@ -63,7 +63,6 @@ TensorTrainNorm[big]
 | `TensorTrainDecomposition`, `TensorTrainContract` | conversion to and from dense arrays |
 | `TensorTrainCompress`, `TensorTrainOrthogonalize`, `TensorTrainNorm` | rank control and canonical forms |
 | `TensorTrainPlus`, `TensorTrainScale`, `TensorTrainHadamard`, `TensorTrainInnerProduct` | arithmetic |
-| `MPOApply` | matrix product operators |
 
 Operators `+`, `-`, `c t`, and `⊙` map to the corresponding functions when every operand is a tensor train.
 
